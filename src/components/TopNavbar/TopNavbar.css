@@ -1,0 +1,27 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.componet-container{
+    background-color: var(--black-w);
+    overflow: auto;
+    height: 100%;
+    padding: 0 5px 10px 20px;
+}
+.componet-container::-webkit-scrollbar {
+    width: 7px;
+}
+   
+  /* Handle */
+  .componet-container::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .componet-container::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
