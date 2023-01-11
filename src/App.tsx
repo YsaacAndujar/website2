@@ -1,8 +1,11 @@
 import "./App.css"
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="App">
       <br />
+      <br /><div id="sect">
+        hola
+      </div>
       <br />
       <br />
       <br />
@@ -116,9 +119,8 @@ function App() {
       <br />
       <br />
       <br />
-      <br />
-      <div id="sect">
-hola
+      <div id="sect2">
+        hola
       </div>
     </div>
   );
