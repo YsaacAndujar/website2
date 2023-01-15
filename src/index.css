@@ -13,6 +13,8 @@
     --black-ww: rgba(255, 255, 255, 0.12);
     --black-w: rgba(255, 255, 255, 0.08);
     --black: #121212;
+
+    --blue: #0096FF;
     /* end of colors for the app */
 
     font-family: 'Montserrat', 'sans-serif';

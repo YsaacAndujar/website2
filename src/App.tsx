@@ -1,11 +1,11 @@
 import "./App.css"
 function App() {
   return (
-    <div className="App" id="App">
+    <div className="App" >
       <br />
-      <br /><div id="sect">
+      <br /><section id="sect">
         hola
-      </div>
+      </section>
       <br />
       <br />
       <br />
@@ -38,6 +38,9 @@ function App() {
       <br />
       <br />
       <br />
+      <section id="sect2">
+        hola
+      </section>
       <br />
       <br />
       <br />

@@ -9,16 +9,16 @@ export const MenuStyle: Styles = {
     //backgroundColor: 'var(--black-w)',
 }
 export const MenuItemStyle: Styles = {
-      button: ({ active }: {active: boolean}) => {
+      button: () => {
         return {
             fontSize: '18px',
             color: 'var(--white)',
             transition: 'all 0.3s ease-out',
             '&:hover': {
-                color: '#0096FF',
+                color: 'var(--blue)',
                 backgroundColor: 'var(--black-w)',
+                borderLeft: "5px solid var(--blue)",
             },
-            //backgroundColor: active ? 'var(--black-w)' : undefined,
           };
       },
 }
