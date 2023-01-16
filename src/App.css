@@ -1,0 +1,15 @@
+.title{
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--white);
+}
+.final-separator{
+    border: 1px solid var(--black-ww);
+    width: 93%;
+}
+.separator{
+    border: 1px solid var(--gray-w);
+}
+.closeUp{
+    margin-top: -15px;
+}

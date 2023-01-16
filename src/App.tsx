@@ -1,130 +1,28 @@
 import "./App.css"
+import Home from "./components/Home/Home";
+import Contactme from "components/Contactme/Contactme";
+import Education from "components/Education/Education";
+import Experience from "components/Experience/Experience";
+import Proyects from "components/Proyects/Proyects";
+
 function App() {
   return (
     <div className="App" >
-      <br />
-      <br /><section id="sect">
-        hola
+      <section id="home">
+        <Home/>
       </section>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <section id="sect2">
-        hola
+      <section id="education">
+        <Education/>
       </section>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <div id="sect2">
-        hola
-      </div>
+      <section id="experience">
+        <Experience/>
+      </section>
+      <section id="proyects">
+        <Proyects/>
+      </section>
+      <section id="contactme">
+        <Contactme/>
+      </section>
     </div>
   );
 }

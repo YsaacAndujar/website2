@@ -24,7 +24,6 @@ function TopNavbar({ component }: bodyProp) {
                 <button className={collapsedClassName} onClick={() => collapseSidebar()}><FontAwesomeIcon icon={faChevronLeft} /></button>
             </div>
             <div className="componet-container">
-                <div className='separator'></div>
                 {component}
             </div>
         </div>

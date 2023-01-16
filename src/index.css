@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 .main{
 
@@ -17,7 +17,8 @@
     --blue: #0096FF;
     /* end of colors for the app */
 
-    font-family: 'Montserrat', 'sans-serif';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     display: flex;
     height: 100%;
     color: var(--white);

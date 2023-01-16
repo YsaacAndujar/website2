@@ -10,7 +10,7 @@
   background-color: var(--black);
   overflow: auto;
   height: 100%;
-  padding: 0 5px 10px 20px;
+  padding: 0 20px 10px 20px;
 }
 
 .componet-container::-webkit-scrollbar {
