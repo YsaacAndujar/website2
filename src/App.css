@@ -2,14 +2,33 @@
     font-size: 30px;
     font-weight: 300;
     color: var(--white);
+    margin-bottom: 0px;
+}
+.sub-title{
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--white-b);
+    margin-bottom: 5px;
+}
+.text{
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--white-b); 
 }
 .final-separator{
     border: 1px solid var(--black-ww);
     width: 93%;
+    margin-top: 20px;
 }
 .separator{
     border: 1px solid var(--gray-w);
 }
-.closeUp{
-    margin-top: -15px;
+.App{
+    padding-top: 100px;
 }
+/* .closeUp{
+    margin-top: -15px;
+} */

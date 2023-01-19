@@ -18,7 +18,7 @@ function TopNavbar({ component }: bodyProp) {
         setCollapsedClassName('collapse-btn')
     }, [collapsed])
     return (
-        <div className="container">
+        <div className="container-topbar">
             <div className="top-bar">
                 <button className='toggle-btn' onClick={() => toggleSidebar()}><FontAwesomeIcon icon={faBars} /></button>
                 <button className={collapsedClassName} onClick={() => collapseSidebar()}><FontAwesomeIcon icon={faChevronLeft} /></button>

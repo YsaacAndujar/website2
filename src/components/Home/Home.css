@@ -1,0 +1,37 @@
+.text-container{
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+}
+.text-container > div{
+    align-items: center;
+    display: flex;
+}
+
+.sm{
+    font-size: 18px;
+    color: var(--white-b); 
+    font-weight: 300;
+}
+.md{
+    font-size: 25px;
+    color: var(--white-b); 
+    font-weight: 300;
+}
+.bg{
+    padding-left:0;
+    font-size: 35px;
+    color: var(--white);
+}
+.bg > p{
+    text-align: center;
+    margin: 0;
+}
+.me{
+    filter: contrast(0);
+    width: 300px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
