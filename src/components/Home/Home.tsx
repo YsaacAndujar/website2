@@ -25,7 +25,7 @@ const Home = () => {
               <span>
                 <span className='sm'>Hola, mi nombre es</span><span className='md'> Ysaac Andujar Binet</span>
                 <br />
-                <span className='sm'>Y soy un</span>
+                <span className='sm'>Y soy un</span> 
               </span>
             </div>
             <Typed
