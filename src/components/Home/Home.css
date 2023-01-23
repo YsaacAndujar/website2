@@ -40,19 +40,23 @@
     filter: contrast(0);
     width: 300px;
 }
-
-.container {
+.br-mobile{
+    display: none;
+}
+.front-container {
     display: flex;
     justify-content: center;
 }
-
+.summary-container{
+    margin-top: 25px;
+}
 @media (max-width: 1111px) {
     .text-container {
         margin-right: 5%;
     }
 }
-@media (max-width: 815px) {
-    .container{
+@media (max-width: 1067px) {
+    .front-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -64,5 +68,10 @@
     }
     .text-group{
         text-align: center;
+    }
+}
+@media (max-width: 500px) {
+    .br-mobile{
+        display: block;
     }
 }

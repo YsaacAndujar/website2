@@ -36,8 +36,8 @@ const SideNavbar = () => {
                 menuItemStyles={MenuItemStyle}
             >
                 <MenuItem title="the message" icon={<FontAwesomeIcon icon={faHouse} />} onClick={() => moveTo('#home')}>Home</MenuItem>
-                <MenuItem title="the message" icon={<FontAwesomeIcon icon={faGraduationCap} />} onClick={() => moveTo('#education')}>Educación</MenuItem>
                 <MenuItem title="the message" icon={<FontAwesomeIcon icon={faBriefcase} />} onClick={() => moveTo('#experience')}>Experiencia</MenuItem>
+                <MenuItem title="the message" icon={<FontAwesomeIcon icon={faGraduationCap} />} onClick={() => moveTo('#education')}>Educación</MenuItem>
                 <MenuItem title="the message" icon={<FontAwesomeIcon icon={faFolder} />} onClick={() => moveTo('#proyects')}>Proyectos</MenuItem>
                 <MenuItem title="the message" icon={<FontAwesomeIcon icon={faPhoneVolume} />} onClick={() => moveTo('#contactme')}>Contactame</MenuItem>
             </Menu>

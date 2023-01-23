@@ -9,13 +9,17 @@ function App() {
   return (
     <div className="App" >
       <section id="home">
+      <br />
+      <br />
+      <br />
+      <br />
         <Home/>
-      </section>
-      <section id="education">
-        <Education/>
       </section>
       <section id="experience">
         <Experience/>
+      </section>
+      <section id="education">
+        <Education/>
       </section>
       <section id="proyects">
         <Proyects/>

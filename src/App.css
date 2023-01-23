@@ -11,24 +11,27 @@
     color: var(--white-b);
     margin-bottom: 5px;
 }
+.default-padding{
+    padding: 0 20px;
+}
 .text{
+    text-align: justify;
     margin-top: 0px;
     margin-bottom: 8px;
     font-size: 18px;
     font-weight: 300;
-    color: var(--white-b); 
+    color: var(--white-b);
 }
 .final-separator{
-    border: 1px solid var(--black-ww);
+    border: 1px solid var(--black-w);
     width: 93%;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 .separator{
     border: 1px solid var(--gray-w);
 }
-.App{
-    padding-top: 100px;
-}
+
 /* .closeUp{
     margin-top: -15px;
 } */
