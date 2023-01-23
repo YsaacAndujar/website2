@@ -25,7 +25,7 @@ const Experience = () => {
                 <p>Desarrollador FullStack</p>
                 <p>Aquí realicé un BackOffice y API's para una aplicación móvil sobre recargas telefónicas, transferencia de dinero y compra y venta de tickets de lotería.</p>
               </div>
-            </div>
+            </div> 
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-date">06/2019 - 08/2019</div>
