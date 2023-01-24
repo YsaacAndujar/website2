@@ -24,3 +24,9 @@
     color: var(--white);
     background-color: var(--black);
 }
+.center{
+    justify-content: center;
+}
+.right{
+    justify-content: right;
+}

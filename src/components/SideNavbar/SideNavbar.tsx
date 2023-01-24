@@ -1,6 +1,6 @@
 import { Sidebar, Menu, MenuItem, useProSidebar } from 'react-pro-sidebar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faGraduationCap, faBriefcase, faFolder, faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faGraduationCap, faBriefcase, faFolder, faPhoneVolume, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
 import { SidebarStyle, MenuStyle, MenuItemStyle } from './styles'
 import { useEffect, useState } from 'react';
 
@@ -35,11 +35,12 @@ const SideNavbar = () => {
                 rootStyles={MenuStyle}
                 menuItemStyles={MenuItemStyle}
             >
-                <MenuItem title="the message" icon={<FontAwesomeIcon icon={faHouse} />} onClick={() => moveTo('#home')}>Home</MenuItem>
-                <MenuItem title="the message" icon={<FontAwesomeIcon icon={faBriefcase} />} onClick={() => moveTo('#experience')}>Experiencia</MenuItem>
-                <MenuItem title="the message" icon={<FontAwesomeIcon icon={faGraduationCap} />} onClick={() => moveTo('#education')}>Educación</MenuItem>
-                <MenuItem title="the message" icon={<FontAwesomeIcon icon={faFolder} />} onClick={() => moveTo('#proyects')}>Proyectos</MenuItem>
-                <MenuItem title="the message" icon={<FontAwesomeIcon icon={faPhoneVolume} />} onClick={() => moveTo('#contactme')}>Contactame</MenuItem>
+                <MenuItem title="Home" icon={<FontAwesomeIcon icon={faHouse} />} onClick={() => moveTo('#home')}>Home</MenuItem>
+                <MenuItem title="Experiencia" icon={<FontAwesomeIcon icon={faBriefcase} />} onClick={() => moveTo('#experience')}>Experiencia</MenuItem>
+                <MenuItem title="Educación" icon={<FontAwesomeIcon icon={faGraduationCap} />} onClick={() => moveTo('#education')}>Educación</MenuItem>
+                <MenuItem title="Skills" icon={<FontAwesomeIcon icon={faCodeBranch} />} onClick={() => moveTo('#skills')}>Skills</MenuItem>
+                <MenuItem title="Proyectos" icon={<FontAwesomeIcon icon={faFolder} />} onClick={() => moveTo('#proyects')}>Proyectos</MenuItem>
+                <MenuItem title="Contactame" icon={<FontAwesomeIcon icon={faPhoneVolume} />} onClick={() => moveTo('#contactme')}>Contactame</MenuItem>
             </Menu>
         </Sidebar>
     );

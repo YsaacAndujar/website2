@@ -4,6 +4,7 @@ import Contactme from "components/Contactme/Contactme";
 import Education from "components/Education/Education";
 import Experience from "components/Experience/Experience";
 import Proyects from "components/Proyects/Proyects";
+import Skills from "components/Skills/Skills";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       </section>
       <section id="education">
         <Education/>
+      </section>
+      <section id="skills">
+        <Skills/>
       </section>
       <section id="proyects">
         <Proyects/>
