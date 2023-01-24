@@ -1,23 +1,53 @@
-const Proyects = ()=> {
-    return (
-      <div className="App" >
-        <section id="home">
-  
-        </section>
-        <section id="education">
-  
-        </section>
-        <section id="experience">
-  
-        </section>
-        <section id="proyects">
-  
-        </section>
-        <section id="contactme">
-  
-        </section>
+import "./Proyects.css";
+const Proyects = () => {
+  return (
+    <>
+      <h1 className="title">Proyectos</h1>
+      <hr className="separator" />
+      <div className="container default-padding">
+        <div className="card">
+          <h2 className="title-card">Recarga365</h2>
+          <p className="text">
+            Este fue un proyecto en el que trabajé para la empresa "Seguridad
+            Residencial y Comercial".
+          </p>
+          <p className="text">
+            Aquí realicé un BackOffice y API's para una aplicación móvil sobre
+            recargas telefónicas, transferencia de dinero y compra y venta de
+            tickets de lotería.
+          </p>
+          <a href="#" className="a-text">Ver video</a>
+        </div>
+        <div className="card">
+          <h2 className="title-card">Recarga365</h2>
+          <p className="text">
+            Este fue un proyecto en el que trabajé para la empresa "Seguridad
+            Residencial y Comercial".
+          </p>
+          <p className="text">
+            Aquí realicé un BackOffice y API's para una aplicación móvil sobre
+            recargas telefónicas, transferencia de dinero y compra y venta de
+            tickets de lotería.
+          </p>
+          <a href="#" className="a-text">Ver video</a>
+        </div>
+        <div className="card">
+          <h2 className="title-card">Recarga365</h2>
+          <p className="text">
+            Este fue un proyecto en el que trabajé para la empresa "Seguridad
+            Residencial y Comercial".
+          </p>
+          <p className="text">
+            Aquí realicé un BackOffice y API's para una aplicación móvil sobre
+            recargas telefónicas, transferencia de dinero y compra y venta de
+            tickets de lotería.
+          </p>
+          <a href="#" className="a-text">Ver video</a>
+        </div>
       </div>
-    );
-  }
-  
-  export default Proyects;
+      <hr className="final-separator" />
+    </>
+  );
+};
+
+export default Proyects;

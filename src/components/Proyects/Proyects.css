@@ -1,0 +1,19 @@
+.card{
+	background-color: rgb(29, 29, 29);
+    width: 370px;
+    height: 350px;
+    padding: 0 20px 10px;
+}
+.container{
+    column-gap: 50px;
+    row-gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.title-card{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--white);
+}
