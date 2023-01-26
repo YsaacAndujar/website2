@@ -31,3 +31,13 @@
         justify-content: center;
     }
 }
+@media (max-width: 420px) {
+    .skill-cards-container{
+        padding: 10px 5px;
+    }
+}
+@media (max-width: 600px) {
+    .skill-cards-container{
+        padding: 10px 5px;
+    }
+}

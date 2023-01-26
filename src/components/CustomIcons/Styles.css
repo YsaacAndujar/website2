@@ -13,6 +13,18 @@
 .link-icon img.icon-bg.Blazor{
     width: 60px;
 } 
+.link-icon img.icon-bg.WhatsApp{
+    width: 35px;
+    filter: brightness(0) invert(0.7);
+} 
+.link-icon img.icon-bg.Linkedin{
+    width: 35px;
+    filter: brightness(0) invert(0.7);
+} 
+.link-icon img.icon-bg.Telegram{
+    width: 30px;
+    filter: brightness(0) invert(0.7);
+} 
 .link-icon img.icon-bg{
     width: 50px;
 }

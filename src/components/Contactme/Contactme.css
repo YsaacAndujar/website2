@@ -1,0 +1,35 @@
+/* .contact-card {
+    background-color: rgb(29, 29, 29);
+} */
+
+.contactme-container {
+    justify-content: center;
+    gap: 0PX 35px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10px 10px;
+}
+
+.contact-card p {
+    transition: all 0.1s ease-out;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--white-b);
+    vertical-align: middle;
+}
+.contact-card p svg{
+    margin-right: 10px;
+}
+.contact-card p.active {
+    cursor: pointer;
+    color: var(--blue);
+}
+.contact-card p:hover {
+    cursor: pointer;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10PX 35px;
+}

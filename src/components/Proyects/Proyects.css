@@ -25,6 +25,43 @@
     .card{
         height: 440px;
     }
+
+}
+@media (max-width: 400px) {
+    .card{
+        height: 465px;
+    }
+
+}
+@media (max-width: 395px) {
+    .card{
+        height: 475px;
+    }
+
+}
+@media (max-width: 390px) {
+    .card{
+        height: 485px;
+    }
+
+}
+@media (max-width: 380px) {
+    .card{
+        height: 500px;
+    }
+
+}
+@media (max-width: 360px) {
+    .card{
+        height: 530px;
+    }
+
+}
+@media (max-width: 350px) {
+    .card{
+        height: 550px;
+    }
+
 }
 .container{
     column-gap: 50px;

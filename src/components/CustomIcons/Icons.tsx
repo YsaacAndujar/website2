@@ -12,6 +12,42 @@ export const GitHubIcon = ({ link, size = "icon-sm" }: AProps) => {
     </a>
   );
 };
+export const WhatsAppIcon = ({ link, size = "icon-sm" }: AProps) => {
+  return (
+    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon WhatsApp pointer `}>
+      <img
+        className={`WhatsApp ${size}`}
+        src="https://img.icons8.com/ios-glyphs/512/whatsapp.png"
+        alt="WhatsApp"
+        title="WhatsApp"
+      />
+    </a>
+  );
+};
+export const TelegramIcon = ({ link, size = "icon-sm" }: AProps) => {
+  return (
+    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Telegram pointer `}>
+      <img
+        className={`Telegram ${size}`}
+        src="https://img.icons8.com/ios-filled/512/telegram-app.png"
+        alt="Telegram"
+        title="Telegram"
+      />
+    </a>
+  );
+};
+export const LinkedinIcon = ({ link, size = "icon-sm" }: AProps) => {
+  return (
+    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Linkedin pointer `}>
+      <img
+        className={`Linkedin ${size}`}
+        src="https://img.icons8.com/ios-filled/512/linkedin-circled.png"
+        alt="Linkedin"
+        title="Linkedin"
+      />
+    </a>
+  );
+};
 export const YouTubeIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
     <a target="_blank" rel="noreferrer"  href={link} className={`link-icon YouTube pointer `}>

@@ -37,7 +37,7 @@
 }
 
 .me {
-    filter: contrast(0);
+    /* filter: contrast(0); */
     width: 300px;
 }
 .br-mobile{
@@ -73,5 +73,10 @@
 @media (max-width: 500px) {
     .br-mobile{
         display: block;
+    }
+}
+@media (max-width: 500px) {
+    .bg{
+        min-height: 78px;
     }
 }
