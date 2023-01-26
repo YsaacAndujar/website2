@@ -1,4 +1,4 @@
-import "./App.css"
+import "./App.css";
 import Home from "./components/Home/Home";
 import Contactme from "components/Contactme/Contactme";
 import Education from "components/Education/Education";
@@ -8,28 +8,28 @@ import Skills from "components/Skills/Skills";
 
 function App() {
   return (
-    <div className="App" >
+    <div className="App">
       <section id="home">
-      <br />
-      <br />
-      <br />
-      <br />
-        <Home/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <Home />
       </section>
       <section id="experience">
-        <Experience/>
+        <Experience />
       </section>
       <section id="education">
-        <Education/>
+        <Education />
       </section>
       <section id="skills">
-        <Skills/>
+        <Skills />
       </section>
       <section id="proyects">
-        <Proyects/>
+        <Proyects />
       </section>
       <section id="contactme">
-        <Contactme/>
+        <Contactme />
       </section>
     </div>
   );

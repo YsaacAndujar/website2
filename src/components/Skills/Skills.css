@@ -1,0 +1,33 @@
+.skill-container{
+    padding: 10px 20px;
+}
+.skill-cards-container{
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.skill-card{
+    text-align: center;
+    background-color: var(--black-w);
+    border-radius: 5%;
+    padding: 10px 0px;
+    width: 120px;
+}
+.skill-card p{
+    vertical-align: bottom;
+    text-align: center;
+}
+.skill-card p{
+    margin-top: 8px;
+}
+.skill-card a.link-icon{
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .skill-cards-container{
+        justify-content: center;
+    }
+}

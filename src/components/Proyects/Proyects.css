@@ -4,6 +4,27 @@
     height: 390px;
     padding: 0 20px 0px;
     position: relative;
+    border-radius: 2%;
+}
+@media (max-width: 500px) {
+    .card{
+        height: 400px;
+    }
+}
+@media (max-width: 460px) {
+    .card{
+        height: 420px;
+    }
+}
+@media (max-width: 450px) {
+    .card{
+        height: 430px;
+    }
+}
+@media (max-width: 420px) {
+    .card{
+        height: 440px;
+    }
 }
 .container{
     column-gap: 50px;
