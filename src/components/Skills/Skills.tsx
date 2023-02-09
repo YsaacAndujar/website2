@@ -1,7 +1,5 @@
 import "./Skills.css";
 import {
-  GitHubIcon,
-  YouTubeIcon,
   PythonIcon,
   DjangoIcon,
   PostgreSQLIcon,
@@ -9,10 +7,8 @@ import {
   TypeScriptIcon,
   CSharpIcon,
   BlazorIcon,
-  LiveIcon,
   VueIcon,
   JavaScriptIcon,
-  EmptyIcon,
   SqlServerIcon,
   AspxIcon,
   ReactIcon,

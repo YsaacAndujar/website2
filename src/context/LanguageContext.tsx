@@ -5,7 +5,7 @@ interface Props {
   children: ReactNode;
 }
 
-type LangageType = {
+export type LangageType = {
   Language: string;
   setLanguage: (value: string) => void;
 };
@@ -18,3 +18,5 @@ export const LanguageContextProvider = ({ children }: Props) => {
     </LanguageContext.Provider>
   );
 };
+
+export default LanguageContext
