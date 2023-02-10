@@ -1,7 +1,7 @@
 import "./Home.css";
 import Typed from "react-typed";
 import LanguageContext, { LangageType } from "context/LanguageContext";
-import { ReactNode, useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import me from "assets/img/me.jpg";
 interface KeyStr {
   [key: string]: string;
@@ -35,15 +35,15 @@ const Home = () => {
       es: [
         "Desarrollador de software",
         "Programador",
-        "Desarrollador FullStack",
         "Tecnólogo en software",
+        "Desarrollador FullStack",
         "Estudiante Ing. Software",
       ],
       en: [
         "Software Developer",
         "Programmer",
-        "Full Stack Developer",
         "Software Technician",
+        "Full Stack Developer",
         "Software Engineer",
       ],
     };

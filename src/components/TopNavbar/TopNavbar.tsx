@@ -43,11 +43,11 @@ function TopNavbar({ component }: bodyProp) {
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
         <div className="language-container">
-          <h3>Es</h3>
+          <h4>Es</h4>
           <div className="switch" data-isOn={isOn} onClick={toggleSwitch}>
             <motion.div className="handle" layout transition={spring} />
           </div>
-          <h3>En</h3>
+          <h4>En</h4>
         </div>
       </div>
       <div className="componet-container">{component}</div>
