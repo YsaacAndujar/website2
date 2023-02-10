@@ -6,10 +6,17 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { GitHubIcon, LinkedinIcon, TelegramIcon, WhatsAppIcon } from "components/CustomIcons/Icons";
+import LanguageContext, { LangageType } from "context/LanguageContext";
+import { useContext } from "react";
 interface KeyStr {
   [key: string]: string;
 }
+const title: KeyStr = {
+  es: "Contáctame",
+  en: "Contact",
+};
 const Contactme = () => {
+  const { Language } = useContext(LanguageContext) as LangageType;
   const clipboardText: KeyStr = {
     mobile: '18492819395',
     mail: 'ysaacandujar@gmail.com',
@@ -26,7 +33,7 @@ const Contactme = () => {
 
   return (
     <>
-      <h1 className="title">Contáctame</h1>
+      <h1 className="title">{title[Language]}</h1>
       <hr className="separator" />
       <div className="contactme-container">
         <div className="contact-card" title="Celular">
