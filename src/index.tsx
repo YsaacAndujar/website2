@@ -6,19 +6,22 @@ import TopNavbar from "./components/TopNavbar/TopNavbar";
 import "./index.css";
 import { ProSidebarProvider } from "react-pro-sidebar";
 import { LanguageContextProvider } from "context/LanguageContext";
+import { MotionContextProvider } from "context/MotionContext";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <LanguageContextProvider>
-      <ProSidebarProvider>
-        <div className="main">
-          <SideNavbar />
-          <TopNavbar component={App()} />
-          {/* <App /> */}
-        </div>
-      </ProSidebarProvider>
-    </LanguageContextProvider>
+    <MotionContextProvider>
+      <LanguageContextProvider>
+        <ProSidebarProvider>
+          <div className="main">
+            <SideNavbar />
+            <TopNavbar component={App()} />
+            {/* <App /> */}
+          </div>
+        </ProSidebarProvider>
+      </LanguageContextProvider>
+    </MotionContextProvider>
   </React.StrictMode>
 );

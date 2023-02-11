@@ -4,14 +4,14 @@
 
 .contactme-container {
     justify-content: center;
-    gap: 0PX 35px;
+    gap: 20PX 35px;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 10px 10px;
+    padding: 50px 10px 40px;
 }
 
 .contact-card p {
-    transition: all 0.1s ease-out;
+    margin: 0;
     font-size: 20px;
     font-weight: 300;
     color: var(--white-b);

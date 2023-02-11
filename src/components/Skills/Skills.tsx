@@ -23,7 +23,10 @@ import {
   MongoDbIcon,
 } from "components/CustomIcons/Icons";
 import LanguageContext, { LangageType } from "context/LanguageContext";
-import { useContext } from "react";
+import { ReactNode, useContext } from "react";
+import { motion } from "framer-motion";
+import MotionContext, { MotionType } from "context/MotionContext";
+
 interface KeyStr {
   [key: string]: string;
 }
@@ -40,7 +43,102 @@ const database: KeyStr = {
   es: "Base de datos",
   en: "Data Bases",
 };
+interface skill {
+  icon: ReactNode;
+  name: string;
+}
+const languagesSkills: Array<skill> = [
+  {
+    icon: <JavaScriptIcon size="icon-bg" />,
+    name: "JavaScript",
+  },
+  {
+    icon: <CSharpIcon size="icon-bg" />,
+    name: "C#",
+  },
+  {
+    icon: <PythonIcon size="icon-bg" />,
+    name: "Python",
+  },
+  {
+    icon: <TypeScriptIcon size="icon-bg" />,
+    name: "TypeScript",
+  },
+  {
+    icon: <JavaIcon size="icon-bg" />,
+    name: "Java",
+  },
+  {
+    icon: <CPlusPlusIcon size="icon-bg" />,
+    name: "C++",
+  },
+  {
+    icon: <KotlinIcon size="icon-bg" />,
+    name: "Kotlin",
+  },
+  {
+    icon: <DartIcon size="icon-bg" />,
+    name: "Dart",
+  },
+];
+const frameworksSkill: Array<skill> = [
+  {
+    icon: <VueIcon size="icon-bg" />,
+    name: "Vue",
+  },
+  {
+    icon: <ReactIcon size="icon-bg" />,
+    name: "React",
+  },
+  {
+    icon: <DjangoIcon size="icon-bg" />,
+    name: "Django",
+  },
+  {
+    icon: <AngularIcon size="icon-bg" />,
+    name: "Angular",
+  },
+  {
+    icon: <BlazorIcon size="icon-bg" />,
+    name: "Blazor",
+  },
+  {
+    icon: <AspxIcon size="icon-bg" />,
+    name: "Asp",
+  },
+  {
+    icon: <FlutterIcon size="icon-bg" />,
+    name: "Flutter",
+  },
+  {
+    icon: <IonicIcon size="icon-bg" />,
+    name: "Ionic",
+  },
+];
+const databasesSkill: Array<skill> = [
+  {
+    icon: <SqlServerIcon size="icon-bg" />,
+    name: "SqlServer",
+  },
+  {
+    icon: <MySqlIcon size="icon-bg" />,
+    name: "MySql",
+  },
+  {
+    icon: <OracleIcon size="icon-bg" />,
+    name: "Oracle",
+  },
+  {
+    icon: <MongoDbIcon size="icon-bg" />,
+    name: "MongoDb",
+  },
+  {
+    icon: <PostgreSQLIcon size="icon-bg" />,
+    name: "Postgre",
+  },
+];
 const Skills = () => {
+  const { initital, inView } = useContext(MotionContext) as MotionType;
   const { Language } = useContext(LanguageContext) as LangageType;
 
   return (
@@ -50,100 +148,85 @@ const Skills = () => {
       <div className="skill-container">
         <h1 className="sub-title">{programmingLanguages[Language]}</h1>
         <div className="skill-cards-container">
-          <div className="skill-card">
-            <JavaScriptIcon size="icon-bg" />
-            <p className="text">JavaScript</p>
-          </div>
-          <div className="skill-card">
-            <CSharpIcon size="icon-bg" />
-            <p className="text">C#</p>
-          </div>
-          <div className="skill-card">
-            <PythonIcon size="icon-bg" />
-            <p className="text">Python</p>
-          </div>
-          <div className="skill-card">
-            <TypeScriptIcon size="icon-bg" />
-            <p className="text">TypeScript</p>
-          </div>
-          <div className="skill-card">
-            <JavaIcon size="icon-bg" />
-            <p className="text">Java</p>
-          </div>
-          <div className="skill-card">
-            <CPlusPlusIcon size="icon-bg" />
-            <p className="text">C++</p>
-          </div>
-          <div className="skill-card">
-            <KotlinIcon size="icon-bg" />
-            <p className="text">Kotlin</p>
-          </div>
-          <div className="skill-card">
-            <DartIcon size="icon-bg" />
-            <p className="text">Dart</p>
-          </div>
+          {languagesSkills.map(({ icon, name }) => {
+            return (
+              <motion.div
+              initial={initital}
+                whileInView={inView}
+                className="skill-card"
+                whileHover={{
+                  scale: 1.1,
+                  rotate: 360,
+                  transition: { duration: 0.3 },
+                }}
+                whileTap={{
+                  scale: 0.8,
+                  rotate: -360,
+                  borderRadius: "100%",
+                  transition: { duration: 0.3 },
+                }}
+              >
+                {icon}
+                <p className="text">{name}</p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
       <div className="skill-container">
         <h1 className="sub-title">Frameworks</h1>
         <div className="skill-cards-container">
-          <div className="skill-card">
-            <VueIcon size="icon-bg" />
-            <p className="text">Vue</p>
-          </div>
-          <div className="skill-card">
-            <ReactIcon size="icon-bg" />
-            <p className="text">React</p>
-          </div>
-          <div className="skill-card">
-            <DjangoIcon size="icon-bg" />
-            <p className="text">Django</p>
-          </div>
-          <div className="skill-card">
-            <AngularIcon size="icon-bg" />
-            <p className="text">Angular</p>
-          </div>
-          <div className="skill-card">
-            <BlazorIcon size="icon-bg" />
-            <p className="text">Blazor</p>
-          </div>
-          <div className="skill-card">
-            <AspxIcon size="icon-bg" />
-            <p className="text">Asp</p>
-          </div>
-          <div className="skill-card">
-            <FlutterIcon size="icon-bg" />
-            <p className="text">Flutter</p>
-          </div>
-          <div className="skill-card">
-            <IonicIcon size="icon-bg" />
-            <p className="text">Ionic</p>
-          </div>
+          {frameworksSkill.map(({ icon, name }) => {
+            return (
+              <motion.div
+              initial={initital}
+                whileInView={inView}
+                className="skill-card"
+                whileHover={{
+                  scale: 1.1,
+                  rotate: 360,
+                  transition: { duration: 0.3 },
+                }}
+                whileTap={{
+                  scale: 0.8,
+                  rotate: -360,
+                  borderRadius: "100%",
+                  transition: { duration: 0.3 },
+                }}
+              >
+                {icon}
+                <p className="text">{name}</p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
       <div className="skill-container">
         <h1 className="sub-title">{database[Language]}</h1>
         <div className="skill-cards-container">
-          <div className="skill-card">
-            <SqlServerIcon size="icon-bg" />
-            <p className="text">SqlServer</p>
-          </div>
-          <div className="skill-card">
-            <MySqlIcon size="icon-bg" />
-            <p className="text">MySql</p>
-          </div>
-          <div className="skill-card">
-            <OracleIcon size="icon-bg" />
-            <p className="text">Oracle</p>
-          </div>
-          <div className="skill-card">
-            <MongoDbIcon size="icon-bg" />
-            <p className="text">MongoDb</p>
-          </div>
-          <div className="skill-card">
-            <PostgreSQLIcon size="icon-bg" />
-            <p className="text">Postgre</p>
-          </div>
+          {databasesSkill.map(({ icon, name }) => {
+            return (
+              <motion.div
+                className="skill-card"
+                initial={initital}
+                whileInView={inView}
+                whileHover={{
+                  scale: 1.1,
+                  rotate: 360,
+                  transition: { duration: 0.3 },
+                }}
+                whileTap={{
+                  scale: 0.8,
+                  rotate: -360,
+                  borderRadius: "100%",
+                  transition: { duration: 0.3 },
+                }}
+              >
+                {icon}
+                <p className="text">{name}</p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
       <hr className="final-separator" />

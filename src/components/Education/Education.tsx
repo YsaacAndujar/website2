@@ -2,6 +2,7 @@ import "assets/css/timeline.css";
 import "./Education.css";
 import LanguageContext, { LangageType } from "context/LanguageContext";
 import { useContext } from "react";
+import { motion } from "framer-motion";
 
 interface KeyStr {
   [key: string]: string;
@@ -70,15 +71,32 @@ const Education = () => {
       <div className="timeline-container">
         <section className="timeline-section">
           <div className="timeline-items">
-            {degrees.map((degree) => {
+            {degrees.map((degree, index) => {
+              const initial = {
+                x: index % 2 === 0 ? -50 : 50,
+              };
+              const inView = {
+                x: 0,
+                transition: { duration: 0.5 },
+              };
               return (
                 <div className="timeline-item">
                   <div className="timeline-dot"></div>
-                  <div className="timeline-date">{degree.period[Language]}</div>
-                  <div className="timeline-content">
+                  <motion.div
+                    className="timeline-date"
+                    initial={initial}
+                    whileInView={inView}
+                  >
+                    {degree.period[Language]}
+                  </motion.div>
+                  <motion.div
+                    className="timeline-content"
+                    initial={initial}
+                    whileInView={inView}
+                  >
                     <h3>{degree.title[Language]}</h3>
                     <p>{degree.school[Language]}</p>
-                  </div>
+                  </motion.div>
                 </div>
               );
             })}

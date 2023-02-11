@@ -1,8 +1,10 @@
 import "./Home.css";
 import Typed from "react-typed";
 import LanguageContext, { LangageType } from "context/LanguageContext";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, useRef } from "react";
 import me from "assets/img/me.jpg";
+import { motion } from "framer-motion";
+
 interface KeyStr {
   [key: string]: string;
 }
@@ -75,20 +77,41 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="img-container">
-          <img className="me" src={me} alt="" />
-        </div>
+        <motion.div className="img-container">
+          <motion.img
+            className="me"
+            src={me}
+            whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+            initial={{ opacity: 0, x: 50 }}
+          />
+        </motion.div>
       </div>
       <div className="summary-container default-padding">
-        {
-          summary[Language].map(text =>{
-            return (
-              <p className="text">
-                  {text}
-              </p>
-            )
-          })
-        }
+        {summary[Language].map((text) => {
+          return <p className="text">{text}</p>;
+        })}
+      </div>
+      <div className="cv-container">
+        <a>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            className="button-9"
+          >
+            CV - ES
+          </motion.button>
+        </a>
+        <a>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            className="button-9"
+          >
+            CV - EN
+          </motion.button>
+        </a>
       </div>
       <hr className="final-separator" />
     </>

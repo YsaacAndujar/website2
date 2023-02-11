@@ -2,6 +2,7 @@ import "assets/css/timeline.css";
 import "./Experience.css";
 import { useContext } from "react";
 import LanguageContext, { LangageType } from "context/LanguageContext";
+import { motion } from "framer-motion";
 interface KeyStr {
   [key: string]: string;
 }
@@ -83,23 +84,34 @@ const Experience = () => {
       <div className="timeline-container">
         <section className="timeline-section">
           <div className="timeline-items">
-          {
-          jobs.map(job =>{
-            return (
-              <div className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-date">{job.period[Language]}</div>
-              <div className="timeline-content">
-                <h3>{job.title[Language]}</h3>
-                <p>{job.position[Language]}</p>
-                <p>
-                {job.summary[Language]}
-                </p>
-              </div>
-            </div>
-            )
-          })
-        }
+            {jobs.map((job, index) => {
+              const initial = {
+                x: index % 2 === 0 ? -50 : 50,
+              };
+              const inView = {
+                x: 0,
+                transition: { duration: 0.5 },
+              };
+              return (
+                <div className="timeline-item">
+                  <div className="timeline-dot"></div>
+                  <motion.div
+                    className="timeline-date"
+                    initial={initial}
+                    whileInView={inView}
+                  >{job.period[Language]}</motion.div>
+                  <motion.div
+                    className="timeline-content"
+                    initial={initial}
+                    whileInView={inView}
+                  >
+                    <h3>{job.title[Language]}</h3>
+                    <p>{job.position[Language]}</p>
+                    <p>{job.summary[Language]}</p>
+                  </motion.div>
+                </div>
+              );
+            })}
           </div>
         </section>
       </div>

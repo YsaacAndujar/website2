@@ -19,6 +19,8 @@ import {
 } from "components/CustomIcons/Icons";
 import LanguageContext, { LangageType } from "context/LanguageContext";
 import { ReactNode, useContext } from "react";
+import { motion } from "framer-motion";
+import MotionContext, { MotionType } from "context/MotionContext";
 
 interface KeyStr {
   [key: string]: string;
@@ -68,7 +70,7 @@ const proyects: Array<proyectInterface> = [
       ],
       en: [
         'This was a project I worked on for the company "Residential and Commercial Security".',
-        'Here I made a BackOffice and API\'s for a mobile application about phone recharges, money transfers and buying and selling lottery tickets.'
+        "Here I made a BackOffice and API's for a mobile application about phone recharges, money transfers and buying and selling lottery tickets.",
       ],
     },
     technologies: [<PythonIcon />, <DjangoIcon />, <PostgreSQLIcon />],
@@ -202,6 +204,7 @@ const title: KeyStr = {
 };
 const Proyects = () => {
   const { Language } = useContext(LanguageContext) as LangageType;
+  const { initital, inView } = useContext(MotionContext) as MotionType;
 
   return (
     <>
@@ -210,7 +213,14 @@ const Proyects = () => {
       <div className="container default-padding">
         {proyects.map(({ title, technologies, summary, more }) => {
           return (
-            <div className="card">
+            <motion.div
+            initial={initital}
+                whileInView={inView}
+              className="card"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
               <h2 className="title-card">{title[Language]}</h2>
               {summary[Language].map((text) => {
                 return <p className="text">{text}</p>;
@@ -220,7 +230,7 @@ const Proyects = () => {
                 <hr className="c-separator" />
                 <div className="icon-group center">{more}</div>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>
