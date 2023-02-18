@@ -1,7 +1,7 @@
 import "./Home.css";
 import Typed from "react-typed";
 import LanguageContext, { LangageType } from "context/LanguageContext";
-import { useContext, useEffect, useState, useRef } from "react";
+import { useContext, useEffect, useState } from "react";
 import me from "assets/img/me.jpg";
 import { motion } from "framer-motion";
 
@@ -92,7 +92,7 @@ const Home = () => {
         })}
       </div>
       <div className="cv-container">
-        <a>
+        <a href="/a" target="_blank">
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -101,7 +101,7 @@ const Home = () => {
             CV - ES
           </motion.button>
         </a>
-        <a>
+        <a href="/a" target="_blank">
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
