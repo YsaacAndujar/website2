@@ -42,20 +42,17 @@ const SideNavbar = () => {
     useProSidebar();
 
   const moveTo = (next: string) => {
-    document
-      .querySelector(next)
-      ?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest",
-      });
+    document.querySelector(next)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
     if (toggled) {
       toggleSidebar();
     }
   };
 
   useEffect(() => {
-    console.log("a");
     if (collapsed) {
       collapseSidebar(false);
     }

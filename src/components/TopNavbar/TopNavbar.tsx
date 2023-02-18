@@ -44,7 +44,7 @@ function TopNavbar({ component }: bodyProp) {
         </button>
         <div className="language-container">
           <h4>Es</h4>
-          <div className="switch" data-isOn={isOn} onClick={toggleSwitch}>
+          <div className="switch" data-ison={isOn} onClick={toggleSwitch}>
             <motion.div className="handle" layout transition={spring} />
           </div>
           <h4>En</h4>

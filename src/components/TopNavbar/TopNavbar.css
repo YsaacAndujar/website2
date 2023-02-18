@@ -23,7 +23,7 @@
 .language-container h4{
   margin: 0;
 }
-.switch[data-isOn="true"] {
+.switch[data-ison="true"] {
   background-color: var(--blue);
   justify-content: flex-end;
 }

@@ -81,7 +81,7 @@ const Education = () => {
                 transition: { duration: 0.5 },
               };
               return (
-                <div className="timeline-item">
+                <div className="timeline-item" key={index}>
                   <div className="timeline-dot"></div>
                   <motion.div
                     className="timeline-date"

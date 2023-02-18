@@ -87,8 +87,8 @@ const Home = () => {
         </motion.div>
       </div>
       <div className="summary-container default-padding">
-        {summary[Language].map((text) => {
-          return <p className="text">{text}</p>;
+        {summary[Language].map((text, index) => {
+          return <p className="text" key={index}>{text}</p>;
         })}
       </div>
       <div className="cv-container">

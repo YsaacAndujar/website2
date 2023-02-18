@@ -58,7 +58,7 @@ const proyects: Array<proyectInterface> = [
     ],
     more: [<EmptyIcon />],
   },
-  {
+  { 
     title: {
       es: "Recarga365",
       en: "Recarga365",
@@ -211,9 +211,10 @@ const Proyects = () => {
       <h1 className="title">{title[Language]}</h1>
       <hr className="separator" />
       <div className="container default-padding">
-        {proyects.map(({ title, technologies, summary, more }) => {
+        {proyects.map(({ title, technologies, summary, more },index) => {
           return (
             <motion.div
+            key={index}
               initial={initital}
               whileInView={inView}
               className="card"
@@ -221,8 +222,8 @@ const Proyects = () => {
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
               <h2 className="title-card">{title[Language]}</h2>
-              {summary[Language].map((text) => {
-                return <p className="text">{text}</p>;
+              {summary[Language].map((text, subindex) => {
+                return <p className="text" key={`${index}${subindex}`}>{text}{`${index}${subindex}`}</p>;
               })}
               <div className="icons-container">
                 <div className="icon-group right">{technologies}</div>
