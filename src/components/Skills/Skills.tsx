@@ -140,7 +140,17 @@ const databasesSkill: Array<skill> = [
 const Skills = () => {
   const { initital, inView } = useContext(MotionContext) as MotionType;
   const { Language } = useContext(LanguageContext) as LangageType;
+   const whileTap = {
+    scale: 0.8,
 
+    transition:{ type: "spring", stiffness: 400, damping: 10, }
+
+  }
+  const whileHover = {
+    scale: 1,
+    rotate: 10,
+    transition: { duration: 0.05 },
+  }
   return (
     <>
       <h1 className="title">{title[Language]}</h1>
@@ -154,17 +164,8 @@ const Skills = () => {
               initial={initital}
                 whileInView={inView}
                 className="skill-card"
-                whileHover={{
-                  scale: 1.1,
-                  rotate: 360,
-                  transition: { duration: 0.3 },
-                }}
-                whileTap={{
-                  scale: 0.8,
-                  rotate: -360,
-                  borderRadius: "100%",
-                  transition: { duration: 0.3 },
-                }}
+                whileHover={whileHover}
+                whileTap={whileTap}
               >
                 {icon}
                 <p className="text">{name}</p>
@@ -182,17 +183,8 @@ const Skills = () => {
               initial={initital}
                 whileInView={inView}
                 className="skill-card"
-                whileHover={{
-                  scale: 1.1,
-                  rotate: 360,
-                  transition: { duration: 0.3 },
-                }}
-                whileTap={{
-                  scale: 0.8,
-                  rotate: -360,
-                  borderRadius: "100%",
-                  transition: { duration: 0.3 },
-                }}
+                whileHover={whileHover}
+                whileTap={whileTap}
               >
                 {icon}
                 <p className="text">{name}</p>
@@ -210,17 +202,8 @@ const Skills = () => {
                 className="skill-card"
                 initial={initital}
                 whileInView={inView}
-                whileHover={{
-                  scale: 1.1,
-                  rotate: 360,
-                  transition: { duration: 0.3 },
-                }}
-                whileTap={{
-                  scale: 0.8,
-                  rotate: -360,
-                  borderRadius: "100%",
-                  transition: { duration: 0.3 },
-                }}
+                whileHover={whileHover}
+                whileTap={whileTap}
               >
                 {icon}
                 <p className="text">{name}</p>

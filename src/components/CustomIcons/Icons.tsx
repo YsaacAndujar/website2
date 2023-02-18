@@ -2,7 +2,12 @@ import AProps from "./AProps";
 import "./Styles.css";
 export const GitHubIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon GitHub pointer `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon GitHub pointer `}
+    >
       <img
         className={`GitHub ${size}`}
         src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
@@ -14,7 +19,12 @@ export const GitHubIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const WhatsAppIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon WhatsApp pointer `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon WhatsApp pointer `}
+    >
       <img
         className={`WhatsApp ${size}`}
         src="https://img.icons8.com/ios-glyphs/512/whatsapp.png"
@@ -26,7 +36,12 @@ export const WhatsAppIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const TelegramIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Telegram pointer `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Telegram pointer `}
+    >
       <img
         className={`Telegram ${size}`}
         src="https://img.icons8.com/ios-filled/512/telegram-app.png"
@@ -38,7 +53,12 @@ export const TelegramIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const LinkedinIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Linkedin pointer `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Linkedin pointer `}
+    >
       <img
         className={`Linkedin ${size}`}
         src="https://img.icons8.com/ios-filled/512/linkedin-circled.png"
@@ -50,7 +70,12 @@ export const LinkedinIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const YouTubeIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon YouTube pointer `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon YouTube pointer `}
+    >
       <img
         className={`YouTube ${size}`}
         src="https://img.icons8.com/color/512/youtube-play.png"
@@ -62,7 +87,12 @@ export const YouTubeIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const PythonIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Python `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Python `}
+    >
       <img
         className={`Python ${size}`}
         src="https://img.icons8.com/color/512/python.png"
@@ -74,7 +104,12 @@ export const PythonIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const DjangoIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Django `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Django `}
+    >
       <img
         className={`Django ${size}`}
         src="https://img.icons8.com/material-outlined/512/django.png"
@@ -86,7 +121,12 @@ export const DjangoIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const PostgreSQLIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon PostgreSQL `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon PostgreSQL `}
+    >
       <img
         className={`PostgreSQL ${size}`}
         src="https://img.icons8.com/color/512/postgreesql.png"
@@ -98,7 +138,12 @@ export const PostgreSQLIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const AngularIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Angular `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Angular `}
+    >
       <img
         className={`Angular ${size}`}
         src="https://img.icons8.com/color/512/angularjs.png"
@@ -110,7 +155,12 @@ export const AngularIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const TypeScriptIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon TypeScript `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon TypeScript `}
+    >
       <img
         className={`TypeScript ${size}`}
         src="https://img.icons8.com/color/512/typescript.png"
@@ -122,7 +172,12 @@ export const TypeScriptIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const CSharpIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon CSharp `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon CSharp `}
+    >
       <img
         className={`CSharp ${size}`}
         src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png?20180210215736"
@@ -134,7 +189,12 @@ export const CSharpIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const BlazorIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Blazor `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Blazor `}
+    >
       <img
         className={`Blazor ${size}`}
         src="https://seeklogo.com/images/B/blazor-logo-B6B0844B72-seeklogo.com.png"
@@ -146,7 +206,12 @@ export const BlazorIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const LiveIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Live pointer `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Live pointer `}
+    >
       <img
         className={`Live ${size}`}
         src="https://img.icons8.com/ios-filled/512/youtube-live.png"
@@ -158,7 +223,12 @@ export const LiveIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const VueIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Vue `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Vue `}
+    >
       <img
         className={`Vue ${size}`}
         src="https://img.icons8.com/color/512/vue-js.png"
@@ -170,7 +240,12 @@ export const VueIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const JavaScriptIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon JavaScript `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon JavaScript `}
+    >
       <img
         className={`JavaScript ${size}`}
         src="https://img.icons8.com/color/512/javascript.png"
@@ -185,7 +260,12 @@ export const EmptyIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const SqlServerIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon SqlServer `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon SqlServer `}
+    >
       <img
         className={`SqlServer ${size}`}
         src="https://img.icons8.com/color/512/microsoft-sql-server.png"
@@ -197,7 +277,12 @@ export const SqlServerIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const AspxIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Aspx `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Aspx `}
+    >
       <img
         className={`Aspx ${size}`}
         src="https://img.icons8.com/external-fauzidea-flat-fauzidea/512/external-aspx-file-file-extension-fauzidea-flat-fauzidea.png"
@@ -209,7 +294,12 @@ export const AspxIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const ReactIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon React `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon React `}
+    >
       <img
         className={`React ${size}`}
         src="https://img.icons8.com/office/512/react.png"
@@ -221,7 +311,12 @@ export const ReactIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const JavaIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Java `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Java `}
+    >
       <img
         className={`Java ${size}`}
         src="https://img.icons8.com/color/512/java-coffee-cup-logo.png"
@@ -233,7 +328,12 @@ export const JavaIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const KotlinIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Kotlin `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Kotlin `}
+    >
       <img
         className={`Kotlin ${size}`}
         src="https://img.icons8.com/color/512/kotlin.png"
@@ -245,7 +345,12 @@ export const KotlinIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const DartIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Dart `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Dart `}
+    >
       <img
         className={`Dart ${size}`}
         src="https://img.icons8.com/color/512/dart.png"
@@ -257,7 +362,12 @@ export const DartIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const CPlusPlusIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon CPlusPlus `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon CPlusPlus `}
+    >
       <img
         className={`CPlusPlus ${size}`}
         src="https://img.icons8.com/color/512/c-plus-plus-logo.png"
@@ -269,7 +379,12 @@ export const CPlusPlusIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const FlutterIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Flutter `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Flutter `}
+    >
       <img
         className={`Flutter ${size}`}
         src="https://img.icons8.com/fluency/512/flutter.png"
@@ -281,7 +396,12 @@ export const FlutterIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const IonicIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Ionic `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Ionic `}
+    >
       <img
         className={`Ionic ${size}`}
         src="https://img.icons8.com/color/512/ionic.png"
@@ -293,7 +413,12 @@ export const IonicIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const OracleIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon Oracle `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon Oracle `}
+    >
       <img
         className={`Oracle ${size}`}
         src="https://img.icons8.com/color/512/oracle-logo.png"
@@ -305,7 +430,12 @@ export const OracleIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const MySqlIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon MySql `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon MySql `}
+    >
       <img
         className={`MySql ${size}`}
         src="https://img.icons8.com/color/512/mysql-logo.png"
@@ -317,7 +447,12 @@ export const MySqlIcon = ({ link, size = "icon-sm" }: AProps) => {
 };
 export const MongoDbIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
-    <a target="_blank" rel="noreferrer"  href={link} className={`link-icon MongoDb `}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon MongoDb `}
+    >
       <img
         className={`MongoDb ${size}`}
         src="https://img.icons8.com/color/512/mongodb.png"

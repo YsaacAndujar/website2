@@ -39,8 +39,8 @@ const degrees: Array<degreeInterface> = [
       en: "01/2020 - 04/2022",
     },
     title: {
-      es: "Tecnólogo En Desarrollo de Software",
-      en: "Software Development Technologist",
+      es: "Desarrollo de Software",
+      en: "Software Development",
     },
     school: {
       en: "Instituto Tecnológico de Las Américas (ITLA)",
@@ -73,10 +73,11 @@ const Education = () => {
           <div className="timeline-items">
             {degrees.map((degree, index) => {
               const initial = {
-                x: index % 2 === 0 ? -50 : 50,
+                x: index % 2 === 0 ? -50 : 50, opacity: 0
               };
               const inView = {
                 x: 0,
+                opacity: 1,
                 transition: { duration: 0.5 },
               };
               return (

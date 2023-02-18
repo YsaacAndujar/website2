@@ -27,7 +27,7 @@ const Home = () => {
     ],
     en: [
       "I am a programmer and FullStack developer with experience in FrontEnd, BackEnd and Database.",
-      "I am know several languages such as JavaScript, C# and Python; Some frameworks like Vue, React, Angular and Django. I also manage databases such as SqlServer, MySql and PostgreSQL.",
+      "I know several languages such as JavaScript, C# and Python; Some frameworks like Vue, React, Angular and Django. I also manage Databases such as SqlServer, MySql and PostgreSQL.",
       "In the same way I am always willing to learn new languages and technologies. I work with responsibility, creativity, and dedication.",
     ],
   };
@@ -95,7 +95,6 @@ const Home = () => {
         <a>
           <motion.button
             whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.8 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
             className="button-9"
           >
@@ -105,7 +104,6 @@ const Home = () => {
         <a>
           <motion.button
             whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.8 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
             className="button-9"
           >

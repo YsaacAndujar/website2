@@ -43,11 +43,11 @@ const proyects: Array<proyectInterface> = [
     summary: {
       es: [
         'CRM de la empresa "Tennos Business"',
-        "Aquí se administra todos los usuarios y empleados. También se manejan las solicitudes y se puede ver los KPI, gráficos, entre otras cosas. Básicamente todo lo que necesita un CRM.",
+        "Administra todos los usuarios y empleados. También se manejan las solicitudes y se puede ver los KPI, gráficos, entre otras cosas. Básicamente todo lo que necesita un CRM.",
       ],
       en: [
         'CRM of the company "Tennos Business"',
-        "Here you manage all users and employees, requests and you can see KPIs, graphs, among other things. Basically everything a CRM needs.",
+        "Manage all users and employees, requests and you can see KPIs, graphs, among other things. Basically everything a CRM needs.",
       ],
     },
     technologies: [
@@ -66,11 +66,11 @@ const proyects: Array<proyectInterface> = [
     summary: {
       es: [
         'Este fue un proyecto en el que trabajé para la empresa "Seguridad Residencial y Comercial".',
-        "Aquí realicé un BackOffice y API's para una aplicación móvil sobre recargas telefónicas, transferencia de dinero y compra y venta de tickets de lotería.",
+        "Realicé un BackOffice y API's para una aplicación móvil sobre recargas telefónicas, transferencia de dinero y compra y venta de tickets de lotería.",
       ],
       en: [
-        'This was a project I worked on for the company "Residential and Commercial Security".',
-        "Here I made a BackOffice and API's for a mobile application about phone recharges, money transfers and buying and selling lottery tickets.",
+        'This was a project I worked on for the company "Seguridad Residencial y Comercial".',
+        "I made a BackOffice and API's for a mobile application about phone recharges, money transfers and buying and selling lottery tickets.",
       ],
     },
     technologies: [<PythonIcon />, <DjangoIcon />, <PostgreSQLIcon />],
@@ -83,11 +83,11 @@ const proyects: Array<proyectInterface> = [
     },
     summary: {
       es: [
-        "Magypago funciona con una terminal de pago Ingenico y/o Ticket que contiene la identidad del proveedor, para el uso exclusivo de consumo en un establecimiento determinado.",
+        "Magypago funciona con una terminal de pago y/o Ticket que contiene la identidad del proveedor, para el uso exclusivo de consumo en un establecimiento determinado.",
         "Todo es manejado a través de una plataforma web, donde podrá ver todos los movimientos de consumos de su establecimiento.",
       ],
       en: [
-        "Magypago works with an Ingenico and/or Ticket payment terminal that contains the supplier's identity, for the exclusive use of consumption in a specific establishment.",
+        "Magypago works with an Payment terminal and/or Ticket that contains the supplier's identity, for the exclusive use of consumption in a specific establishment.",
         "Everything is managed through a web platform, where you can see all the consumption movements of your establishment.",
       ],
     },
@@ -112,7 +112,7 @@ const proyects: Array<proyectInterface> = [
     technologies: [<VueIcon />, <JavaScriptIcon />],
     more: [
       <GitHubIcon link="https://github.com/YsaacAndujar/pokemon-vue2" />,
-      <YouTubeIcon link="https://www.youtube.com/embed/spfMqkFH6-g" />,
+      <YouTubeIcon link="https://youtu.be/N8JpC0WZgJE" />,
       <LiveIcon link="https://ypokemon.netlify.app/" />,
     ],
   },
@@ -124,11 +124,11 @@ const proyects: Array<proyectInterface> = [
     summary: {
       es: [
         "Esta aplicación es un BackOffice para una aplicación web para ver trailers de peliculas.",
-        "Aquí podrás crear nuevas categorías y películas. También tiene varias API que permiten obtener los datos de la base de datos para poder visualizarlas en la aplicación final que tendrá el usuario.",
+        "Podrás crear nuevas categorías y películas. También tiene varias API que permiten obtener los datos de la base de datos para poder visualizarlas en la aplicación final que tendrá el usuario.",
       ],
       en: [
         "This application is a BackOffice for a web application to watch movie trailers.",
-        "Here you can create new categories and movies. It also has several APIs that allow obtaining the data from the database to be able to visualize them in the final application that the user will have.",
+        "You can create new categories and movies. It also has several APIs that allow obtaining the data from the database to be able to visualize them in the final application that the user will have.",
       ],
     },
     technologies: [<PythonIcon />, <DjangoIcon />, <PostgreSQLIcon />],
@@ -144,11 +144,11 @@ const proyects: Array<proyectInterface> = [
     },
     summary: {
       es: [
-        "Este es el FrontEnd de mi BackEnd de Trailers. Consta de un sistema de login de usuarios, una parte para explorar películas y home.",
+        "FrontEnd de mi BackEnd de Trailers. Consta de un sistema de login de usuarios, una parte para explorar películas y home.",
         "También puedes ver los detalles de una película y ver su tráiler en la misma página.",
       ],
       en: [
-        "This is the FrontEnd of my Trailers BackEnd. It consists of a user login system, a part to explore movies and home.",
+        "FrontEnd of my Trailers BackEnd. It consists of a user login system, a part to explore movies and home.",
         "You can also view the details of a movie and watch its trailer on the same page.",
       ],
     },
@@ -169,8 +169,8 @@ const proyects: Array<proyectInterface> = [
         "Los administradores pueden: Modificar los productos, categorias, ver todos los pedidos en un mapa y ver los detalles de cada uno. También pueden modificar el estado de los envíos y modificar el carrousel de la página de inicio.",
       ],
       en: [
-        "You can Choose products and add them to the shopping cart and track your orders.",
-        "Administrators can: Modify products, categories, see all orders on a map and see the details of each one. They can also modify the status of submissions and modify the home page carousel.",
+        "You can choose products and add them to the shopping cart and track your orders.",
+        "Administrators can: modify products, categories, see all orders on a map and see the details of each one. They can also modify the status of submissions and modify the home page carousel.",
       ],
     },
     technologies: [<CSharpIcon />, <BlazorIcon />],
@@ -214,11 +214,10 @@ const Proyects = () => {
         {proyects.map(({ title, technologies, summary, more }) => {
           return (
             <motion.div
-            initial={initital}
-                whileInView={inView}
+              initial={initital}
+              whileInView={inView}
               className="card"
               whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
               <h2 className="title-card">{title[Language]}</h2>

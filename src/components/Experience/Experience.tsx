@@ -51,8 +51,8 @@ const jobs: Array<jobInterface> = [
       en: "Full Stack Developer",
     },
     summary: {
-      es: "Aquí realicé un BackOffice y API's para una aplicación móvil sobre recargas telefónicas, transferencia de dinero y compra y venta de tickets de lotería.",
-      en: "Here I made a BackOffice and API's for a mobile application about telephone recharges, money transfers and buying and selling lottery tickets",
+      es: "Realicé un BackOffice y API's para una aplicación móvil sobre recargas telefónicas, transferencia de dinero y compra y venta de tickets de lotería.",
+      en: "I made a BackOffice and API's for a mobile application about telephone recharges, money transfers and buying and selling lottery tickets",
     },
   },
   {
@@ -69,7 +69,7 @@ const jobs: Array<jobInterface> = [
       en: "Computer Technician",
     },
     summary: {
-      es: "Aquí trabajé como técnico en computación e informática dando soporte al cliente, reparando computadoras y vendiendolas.",
+      es: "Trabajé como técnico en computación e informática dando soporte al cliente, reparando computadoras y vendiendolas.",
       en: "I worked as a computer and IT technician giving customer support, repairing computers and selling them.",
     },
   },
@@ -86,10 +86,11 @@ const Experience = () => {
           <div className="timeline-items">
             {jobs.map((job, index) => {
               const initial = {
-                x: index % 2 === 0 ? -50 : 50,
+                x: index % 2 === 0 ? -50 : 50,opacity: 0
               };
               const inView = {
                 x: 0,
+                opacity: 1,
                 transition: { duration: 0.5 },
               };
               return (
