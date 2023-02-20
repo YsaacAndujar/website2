@@ -104,7 +104,7 @@ const frameworksSkill: Array<skill> = [
   },
   {
     icon: <AspxIcon size="icon-bg" />,
-    name: "Asp",
+    name: "Asp.Net",
   },
   {
     icon: <FlutterIcon size="icon-bg" />,
@@ -134,7 +134,7 @@ const databasesSkill: Array<skill> = [
   },
   {
     icon: <PostgreSQLIcon size="icon-bg" />,
-    name: "Postgre",
+    name: "PostgreSQL",
   },
 ];
 const Skills = () => {

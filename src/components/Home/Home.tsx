@@ -3,6 +3,8 @@ import Typed from "react-typed";
 import LanguageContext, { LangageType } from "context/LanguageContext";
 import { useContext, useEffect, useState } from "react";
 import me from "assets/img/me.jpg";
+import cven from 'assets/pdf/CV - Software Developer - Ysaac Andujar.pdf'
+import cves from 'assets/pdf/CV - Desarrollador de Software - Ysaac Andujar.pdf'
 import { motion } from "framer-motion";
 
 interface KeyStr {
@@ -21,14 +23,14 @@ const Home = () => {
   };
   const summary: { [key: string]: Array<string> } = {
     es: [
-      "Soy un programador y desarrollador FullStack con experiencia en FrontEnd, BackEnd y Base de datos.",
-      "Dominio varios lenguajes como JavaScript, C# y Python; Algunos frameworks como Vue, React, Angular y Django. Tambien manejo Base de datos como SqlServer, MySql y PostgreSQL.",
-      "De igual manera siempre estoy dispuesto a aprender nuevos lenguajes y tecnologías. Trabajo con responsabilidad, creatividad, y dedicación.",
+      "Soy un programador y desarrollador FullStack con experiencia en FrontEnd y BackEnd.",
+      "Domino los lenguajes JavaScript, C#, Python, entre otros; Algunos frameworks como Vue, React, Angular y Django. También manejo Base de datos como SqlServer, MySql y PostgreSQL.",
+      "De igual manera, siempre estoy dispuesto a aprender nuevos lenguajes y tecnologías. Trabajo con responsabilidad, creatividad, y dedicación.",
     ],
     en: [
-      "I am a programmer and FullStack developer with experience in FrontEnd, BackEnd and Database.",
+      "I am a programmer and FullStack developer with experience in FrontEnd and BackEnd.",
       "I know several languages such as JavaScript, C# and Python; Some frameworks like Vue, React, Angular and Django. I also manage Databases such as SqlServer, MySql and PostgreSQL.",
-      "In the same way I am always willing to learn new languages and technologies. I work with responsibility, creativity, and dedication.",
+      "In the same way, I am always willing to learn new languages and technologies. I work with responsibility, creativity, and dedication.",
     ],
   };
   const [typedWord, setTypedWord] = useState<Array<string>>([""]);
@@ -92,7 +94,7 @@ const Home = () => {
         })}
       </div>
       <div className="cv-container">
-        <a href="/a" target="_blank">
+        <a href={cves} download="CV - Desarrollador de Software - Ysaac Andujar">
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -101,7 +103,7 @@ const Home = () => {
             CV - ES
           </motion.button>
         </a>
-        <a href="/a" target="_blank">
+        <a href={cven} download="CV - Software Developer - Ysaac Andujar">
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}

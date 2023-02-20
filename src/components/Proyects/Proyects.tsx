@@ -66,11 +66,11 @@ const proyects: Array<proyectInterface> = [
     summary: {
       es: [
         'Este fue un proyecto en el que trabajé para la empresa "Seguridad Residencial y Comercial".',
-        "Realicé un BackOffice y API's para una aplicación móvil sobre recargas telefónicas, transferencia de dinero y compra y venta de tickets de lotería.",
+        "Realicé un BackOffice y API's para una aplicación móvil sobre recargas telefónicas, transferencia de dinero y compra de tickets de lotería.",
       ],
       en: [
         'This was a project I worked on for the company "Seguridad Residencial y Comercial".',
-        "I made a BackOffice and API's for a mobile application about phone recharges, money transfers and buying and selling lottery tickets.",
+        "I made a BackOffice and API's for a mobile application about phone recharges, money transfers and buying lottery tickets.",
       ],
     },
     technologies: [<PythonIcon />, <DjangoIcon />, <PostgreSQLIcon />],
@@ -102,11 +102,11 @@ const proyects: Array<proyectInterface> = [
     summary: {
       es: [
         'Inspirado en "Quien es este pokemon?", esta app te da una imagen de un pokemon y debes elegir su nombre correcto entre 4 opciones distintas.',
-        "También tiene una pokédex para investigar los pokemon desconocidos.",
+        "Además tiene una pokédex para investigar los pokemon desconocidos.",
       ],
       en: [
         'Inspired by "Who is this pokemon?", this app gives you an image of a pokemon and you must choose its correct name among 4 different options.',
-        "It also has a pokédex to research unknown pokemon.",
+        "Additionally it has a pokédex to search unknown pokemon.",
       ],
     },
     technologies: [<VueIcon />, <JavaScriptIcon />],
@@ -124,14 +124,14 @@ const proyects: Array<proyectInterface> = [
     summary: {
       es: [
         "Esta aplicación es un BackOffice para una aplicación web para ver trailers de peliculas.",
-        "Podrás crear nuevas categorías y películas. También tiene varias API que permiten obtener los datos de la base de datos para poder visualizarlas en la aplicación final que tendrá el usuario.",
+        "Podrás crear nuevas categorías y películas. Tiene varias API que permiten obtener los datos de la base de datos para poder visualizarlas en la aplicación final que tendrá el usuario.",
       ],
       en: [
         "This application is a BackOffice for a web application to watch movie trailers.",
-        "You can create new categories and movies. It also has several APIs that allow obtaining the data from the database to be able to visualize them in the final application that the user will have.",
+        "You can create new categories and movies. It has several APIs that allow obtaining the data from the database to be able to visualize them in the final application that the user will have.",
       ],
     },
-    technologies: [<PythonIcon />, <DjangoIcon />, <PostgreSQLIcon />],
+    technologies: [<PythonIcon />, <DjangoIcon />],
     more: [
       <GitHubIcon link="https://github.com/YsaacAndujar/Trailers_API_Django_Rest_Framework" />,
       <YouTubeIcon link="https://www.youtube.com/embed/QSVky1ARCss" />,
@@ -145,11 +145,11 @@ const proyects: Array<proyectInterface> = [
     summary: {
       es: [
         "FrontEnd de mi BackEnd de Trailers. Consta de un sistema de login de usuarios, una parte para explorar películas y home.",
-        "También puedes ver los detalles de una película y ver su tráiler en la misma página.",
+        "Asimismo, puedes ver los detalles de una película y ver su tráiler en la misma página.",
       ],
       en: [
         "FrontEnd of my Trailers BackEnd. It consists of a user login system, a part to explore movies and home.",
-        "You can also view the details of a movie and watch its trailer on the same page.",
+        "You can view the details of a movie and watch its trailer on the same page.",
       ],
     },
     technologies: [<AngularIcon />, <TypeScriptIcon />],
@@ -223,7 +223,7 @@ const Proyects = () => {
             >
               <h2 className="title-card">{title[Language]}</h2>
               {summary[Language].map((text, subindex) => {
-                return <p className="text" key={`${index}${subindex}`}>{text}{`${index}${subindex}`}</p>;
+                return <p className="text" key={`${index}${subindex}`}>{text}</p>;
               })}
               <div className="icons-container">
                 <div className="icon-group right">{technologies}</div>
