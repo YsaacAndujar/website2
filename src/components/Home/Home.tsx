@@ -3,8 +3,8 @@ import Typed from "react-typed";
 import LanguageContext, { LangageType } from "context/LanguageContext";
 import { useContext, useEffect, useState } from "react";
 import me from "assets/img/me.jpg";
-import cven from 'assets/pdf/CV - Software Developer - Ysaac Andujar.pdf'
-import cves from 'assets/pdf/CV - Desarrollador de Software - Ysaac Andujar.pdf'
+import cven from "assets/pdf/CV - Software Developer - Ysaac Andujar.pdf";
+import cves from "assets/pdf/CV - Desarrollador de Software - Ysaac Andujar.pdf";
 import { motion } from "framer-motion";
 
 interface KeyStr {
@@ -28,7 +28,7 @@ const Home = () => {
       "De igual manera, siempre estoy dispuesto a aprender nuevos lenguajes y tecnologías. Trabajo con responsabilidad, creatividad, y dedicación.",
     ],
     en: [
-      "I am a programmer and FullStack developer with experience in FrontEnd and BackEnd.",
+      "I am a FullStack developer with experience in FrontEnd and BackEnd.",
       "I know several languages such as JavaScript, C# and Python; Some frameworks like Vue, React, Angular and Django. I also manage Databases such as SqlServer, MySql and PostgreSQL.",
       "In the same way, I am always willing to learn new languages and technologies. I work with responsibility, creativity, and dedication.",
     ],
@@ -90,11 +90,18 @@ const Home = () => {
       </div>
       <div className="summary-container default-padding">
         {summary[Language].map((text, index) => {
-          return <p className="text" key={index}>{text}</p>;
+          return (
+            <p className="text" key={index}>
+              {text}
+            </p>
+          );
         })}
       </div>
       <div className="cv-container">
-        <a href={cves} download="CV - Desarrollador de Software - Ysaac Andujar">
+        <a
+          href={cves}
+          download="CV - Desarrollador de Software - Ysaac Andujar"
+        >
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
