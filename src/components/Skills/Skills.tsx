@@ -64,18 +64,18 @@ const languagesSkills: Array<skill> = [
     icon: <TypeScriptIcon size="icon-bg" />,
     name: "TypeScript",
   },
-  {
-    icon: <JavaIcon size="icon-bg" />,
-    name: "Java",
-  },
-  {
-    icon: <CPlusPlusIcon size="icon-bg" />,
-    name: "C++",
-  },
-  {
-    icon: <KotlinIcon size="icon-bg" />,
-    name: "Kotlin",
-  },
+  // {
+  //   icon: <JavaIcon size="icon-bg" />,
+  //   name: "Java",
+  // },
+  // {
+  //   icon: <CPlusPlusIcon size="icon-bg" />,
+  //   name: "C++",
+  // },
+  // {
+  //   icon: <KotlinIcon size="icon-bg" />,
+  //   name: "Kotlin",
+  // },
   {
     icon: <DartIcon size="icon-bg" />,
     name: "Dart",
