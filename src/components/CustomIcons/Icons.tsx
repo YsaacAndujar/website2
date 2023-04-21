@@ -34,6 +34,23 @@ export const WhatsAppIcon = ({ link, size = "icon-sm" }: AProps) => {
     </a>
   );
 };
+export const NodeJsIcon = ({ link, size = "icon-sm" }: AProps) => {
+  return (
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      className={`link-icon NodeJs pointer `}
+    >
+      <img
+        className={`NodeJs ${size}`}
+        src="https://img.icons8.com/color/256/nodejs.png"
+        alt="NodeJs"
+        title="NodeJs"
+      />
+    </a>
+  );
+};
 export const TelegramIcon = ({ link, size = "icon-sm" }: AProps) => {
   return (
     <a
