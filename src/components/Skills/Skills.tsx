@@ -21,6 +21,7 @@ import {
   OracleIcon,
   MySqlIcon,
   MongoDbIcon,
+  NodeJsIcon,
 } from "components/CustomIcons/Icons";
 import LanguageContext, { LangageType } from "context/LanguageContext";
 import { ReactNode, useContext } from "react";
@@ -97,6 +98,10 @@ const frameworksSkill: Array<skill> = [
   {
     icon: <AngularIcon size="icon-bg" />,
     name: "Angular",
+  },
+  {
+    icon: <NodeJsIcon size="icon-bg" />,
+    name: "NodeJs",
   },
   {
     icon: <BlazorIcon size="icon-bg" />,
