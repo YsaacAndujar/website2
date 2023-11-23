@@ -65,59 +65,31 @@ const languagesSkills: Array<skill> = [
     icon: <TypeScriptIcon size="icon-bg" />,
     name: "TypeScript",
   },
-  // {
-  //   icon: <JavaIcon size="icon-bg" />,
-  //   name: "Java",
-  // },
-  // {
-  //   icon: <CPlusPlusIcon size="icon-bg" />,
-  //   name: "C++",
-  // },
-  // {
-  //   icon: <KotlinIcon size="icon-bg" />,
-  //   name: "Kotlin",
-  // },
-  {
-    icon: <DartIcon size="icon-bg" />,
-    name: "Dart",
-  },
 ];
 const frameworksSkill: Array<skill> = [
-  {
-    icon: <VueIcon size="icon-bg" />,
-    name: "Vue",
-  },
   {
     icon: <ReactIcon size="icon-bg" />,
     name: "React",
   },
   {
-    icon: <DjangoIcon size="icon-bg" />,
-    name: "Django",
+    icon: <VueIcon size="icon-bg" />,
+    name: "Vue",
   },
   {
     icon: <AngularIcon size="icon-bg" />,
     name: "Angular",
   },
   {
-    icon: <NodeJsIcon size="icon-bg" />,
-    name: "NodeJs",
-  },
-  {
-    icon: <BlazorIcon size="icon-bg" />,
-    name: "Blazor",
-  },
-  {
     icon: <AspxIcon size="icon-bg" />,
     name: "Asp.Net",
   },
   {
-    icon: <FlutterIcon size="icon-bg" />,
-    name: "Flutter",
+    icon: <DjangoIcon size="icon-bg" />,
+    name: "Django",
   },
   {
-    icon: <IonicIcon size="icon-bg" />,
-    name: "Ionic",
+    icon: <NodeJsIcon size="icon-bg" />,
+    name: "NodeJs",
   },
 ];
 const databasesSkill: Array<skill> = [
@@ -128,10 +100,6 @@ const databasesSkill: Array<skill> = [
   {
     icon: <MySqlIcon size="icon-bg" />,
     name: "MySql",
-  },
-  {
-    icon: <OracleIcon size="icon-bg" />,
-    name: "Oracle",
   },
   {
     icon: <MongoDbIcon size="icon-bg" />,

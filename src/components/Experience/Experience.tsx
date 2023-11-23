@@ -21,8 +21,26 @@ const title: KeyStr = {
 const jobs: Array<jobInterface> = [
   {
     period: {
-      es: "10/2022 - Actualidad",
-      en: "10/2022 - Now",
+      es: "7/2023 - Actualidad",
+      en: "6/2022 - Present",
+    },
+    title: {
+      es: "Codika",
+      en: "Codika",
+    },
+    position: {
+      es: "Desarrollador Full Stack",
+      en: "Full Stack Developer",
+    },
+    summary: {
+      es: "Realicé el Backend, FrontEnd, Base de datos y logica de negocio de diferentes proyectos utilizando diferentes lenguajes y tecnologias.",
+      en: "I create Backend, FrontEnd, Database and business logic for different projects using different languages and technologies.",
+    },
+  },
+  {
+    period: {
+      es: "6/2022 - 7/2023",
+      en: "6/2022 - 7/2023",
     },
     title: {
       es: "Tennos Business",
