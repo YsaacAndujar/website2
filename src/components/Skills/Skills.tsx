@@ -7,13 +7,9 @@ import {
   TypeScriptIcon,
   CSharpIcon,
   VueIcon,
-  JavaScriptIcon,
   SqlServerIcon,
   AspxIcon,
   ReactIcon,
-  //JavaIcon,
-  //KotlinIcon,
-  //CPlusPlusIcon,
   MySqlIcon,
   MongoDbIcon,
   NodeJsIcon,
@@ -45,8 +41,8 @@ interface skill {
 }
 const languagesSkills: Array<skill> = [
   {
-    icon: <JavaScriptIcon size="icon-bg" />,
-    name: "JavaScript",
+    icon: <TypeScriptIcon size="icon-bg" />,
+    name: "TypeScript",
   },
   {
     icon: <CSharpIcon size="icon-bg" />,
@@ -56,15 +52,15 @@ const languagesSkills: Array<skill> = [
     icon: <PythonIcon size="icon-bg" />,
     name: "Python",
   },
-  {
-    icon: <TypeScriptIcon size="icon-bg" />,
-    name: "TypeScript",
-  },
 ];
 const frameworksSkill: Array<skill> = [
   {
     icon: <ReactIcon size="icon-bg" />,
     name: "React",
+  },
+  {
+    icon: <NodeJsIcon size="icon-bg" />,
+    name: "NodeJs",
   },
   {
     icon: <VueIcon size="icon-bg" />,
@@ -81,10 +77,6 @@ const frameworksSkill: Array<skill> = [
   {
     icon: <DjangoIcon size="icon-bg" />,
     name: "Django",
-  },
-  {
-    icon: <NodeJsIcon size="icon-bg" />,
-    name: "NodeJs",
   },
 ];
 const databasesSkill: Array<skill> = [

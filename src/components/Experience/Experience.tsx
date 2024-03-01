@@ -21,8 +21,26 @@ const title: KeyStr = {
 const jobs: Array<jobInterface> = [
   {
     period: {
-      es: "7/2023 - Actualidad",
-      en: "6/2022 - Present",
+      es: "11/2023 - Actualidad",
+      en: "11/2023 - Present",
+    },
+    title: {
+      es: "Kalifika",
+      en: "Kalifika",
+    },
+    position: {
+      es: "Desarrollador Full Stack",
+      en: "Full Stack Developer",
+    },
+    summary: {
+      es: "Desarrollar un BackOffice y Backend para Kalifka, junto con la implementación de la lógica de negocio de la aplicación.",
+      en: "Develop a BackOffice and Backend for Kalifka, as well as assist in creating the business logic for the application.",
+    },
+  },
+  {
+    period: {
+      es: "6/2023 - Actualidad",
+      en: "6/2023 - Present",
     },
     title: {
       es: "Codika",
@@ -39,8 +57,8 @@ const jobs: Array<jobInterface> = [
   },
   {
     period: {
-      es: "6/2022 - 7/2023",
-      en: "6/2022 - 7/2023",
+      es: "6/2022 - 6/2023",
+      en: "6/2022 - 6/2023",
     },
     title: {
       es: "Tennos Business",
@@ -104,7 +122,7 @@ const Experience = () => {
           <div className="timeline-items">
             {jobs.map((job, index) => {
               const initial = {
-                x: index % 2 === 0 ? -50 : 50,opacity: 0
+                x: index % 2 === 0 ? -50 : 50, opacity: 0
               };
               const inView = {
                 x: 0,
