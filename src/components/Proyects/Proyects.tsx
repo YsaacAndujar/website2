@@ -43,11 +43,11 @@ const proyects: Array<proyectInterface> = [
     },
     summary: {
       es: [
-        'Plataforma Kalifka"',
+        'Plataforma Kalifika"',
         "BackOffice para un buró de crédito digital que simplifica el análisis de datos crediticios de clientes. Ofrece gestión de usuarios, herramientas de análisis de crédito, generación de informes personalizados, herramientas de comunicación y auditoría de actividades.",
       ],
       en: [
-        "Kalifka's plataform",
+        "Kalifika's plataform",
         "A BackOffice for a digital credit bureau that simplifies the analysis of customer credit data. It offers user management, credit analysis tools, customized report generation, communication tools, and activity auditing.",
       ],
     },
