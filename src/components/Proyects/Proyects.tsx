@@ -16,6 +16,7 @@ import {
   SqlServerIcon,
   AspxIcon,
   ReactIcon,
+  MongoDbIcon,
 } from "components/CustomIcons/Icons";
 import LanguageContext, { LangageType } from "context/LanguageContext";
 import { ReactNode, useContext } from "react";
@@ -35,6 +36,67 @@ interface proyectInterface {
   more: Array<ReactNode>;
 }
 const proyects: Array<proyectInterface> = [
+  {
+    title: {
+      es: "Kalifika",
+      en: "Kalifika",
+    },
+    summary: {
+      es: [
+        'Plataforma Kalifka"',
+        "BackOffice para un buró de crédito digital que simplifica el análisis de datos crediticios de clientes. Ofrece gestión de usuarios, herramientas de análisis de crédito, generación de informes personalizados, herramientas de comunicación y auditoría de actividades.",
+      ],
+      en: [
+        "Kalifka's plataform",
+        "A BackOffice for a digital credit bureau that simplifies the analysis of customer credit data. It offers user management, credit analysis tools, customized report generation, communication tools, and activity auditing.",
+      ],
+    },
+    technologies: [<PythonIcon />, <DjangoIcon />, <MongoDbIcon />],
+    more: [<EmptyIcon />],
+  },
+  {
+    title: {
+      es: "Journal App",
+      en: "Journal App",
+    },
+    summary: {
+      es: [
+        'Inspirado en "Quien es este pokemon?", esta app te da una imagen de un pokemon y debes elegir su nombre correcto entre 4 opciones distintas.',
+        "Además tiene una pokédex para investigar los pokemon desconocidos.",
+      ],
+      en: [
+        'Inspired by "Who is this pokemon?", this app gives you an image of a pokemon and you must choose its correct name among 4 different options.',
+        "Additionally it has a pokédex to search unknown pokemon.",
+      ],
+    },
+    technologies: [<VueIcon />, <JavaScriptIcon />],
+    more: [
+      <GitHubIcon link="https://github.com/YsaacAndujar/journal-app" />,
+      <LiveIcon link="https://mynotesjournal.netlify.app/" />,
+    ],
+  },
+  {
+    title: {
+      es: "Pokemon Game",
+      en: "Pokemon Game",
+    },
+    summary: {
+      es: [
+        'Inspirado en "Quien es este pokemon?", esta app te da una imagen de un pokemon y debes elegir su nombre correcto entre 4 opciones distintas.',
+        "Además tiene una pokédex para investigar los pokemon desconocidos.",
+      ],
+      en: [
+        'Inspired by "Who is this pokemon?", this app gives you an image of a pokemon and you must choose its correct name among 4 different options.',
+        "Additionally it has a pokédex to search unknown pokemon.",
+      ],
+    },
+    technologies: [<VueIcon />, <JavaScriptIcon />],
+    more: [
+      <GitHubIcon link="https://github.com/YsaacAndujar/pokemon-vue2" />,
+      <YouTubeIcon link="https://youtu.be/N8JpC0WZgJE" />,
+      <LiveIcon link="https://ypokemon.netlify.app/" />,
+    ],
+  },
   {
     title: {
       es: "MagyNet",
@@ -58,7 +120,7 @@ const proyects: Array<proyectInterface> = [
     ],
     more: [<EmptyIcon />],
   },
-  { 
+  {
     title: {
       es: "Recarga365",
       en: "Recarga365",
@@ -93,28 +155,6 @@ const proyects: Array<proyectInterface> = [
     },
     technologies: [<AspxIcon />, <CSharpIcon />, <SqlServerIcon />],
     more: [<EmptyIcon />],
-  },
-  {
-    title: {
-      es: "Pokemon Game",
-      en: "Pokemon Game",
-    },
-    summary: {
-      es: [
-        'Inspirado en "Quien es este pokemon?", esta app te da una imagen de un pokemon y debes elegir su nombre correcto entre 4 opciones distintas.',
-        "Además tiene una pokédex para investigar los pokemon desconocidos.",
-      ],
-      en: [
-        'Inspired by "Who is this pokemon?", this app gives you an image of a pokemon and you must choose its correct name among 4 different options.',
-        "Additionally it has a pokédex to search unknown pokemon.",
-      ],
-    },
-    technologies: [<VueIcon />, <JavaScriptIcon />],
-    more: [
-      <GitHubIcon link="https://github.com/YsaacAndujar/pokemon-vue2" />,
-      <YouTubeIcon link="https://youtu.be/N8JpC0WZgJE" />,
-      <LiveIcon link="https://ypokemon.netlify.app/" />,
-    ],
   },
   {
     title: {
@@ -211,10 +251,10 @@ const Proyects = () => {
       <h1 className="title">{title[Language]}</h1>
       <hr className="separator" />
       <div className="container default-padding">
-        {proyects.map(({ title, technologies, summary, more },index) => {
+        {proyects.map(({ title, technologies, summary, more }, index) => {
           return (
             <motion.div
-            key={index}
+              key={index}
               initial={initital}
               whileInView={inView}
               className="card"
