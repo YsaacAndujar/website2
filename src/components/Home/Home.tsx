@@ -2,7 +2,7 @@ import "./Home.css";
 import Typed from "react-typed";
 import LanguageContext, { LangageType } from "context/LanguageContext";
 import { useContext, useEffect, useState } from "react";
-import me from "assets/img/me.jpg";
+import me from "assets/img/me.png";
 import cven from "assets/pdf/CV - Software Developer - Ysaac Andujar.pdf";
 import cves from "assets/pdf/CV - Desarrollador de Software - Ysaac Andujar.pdf";
 import { motion } from "framer-motion";
