@@ -21,6 +21,24 @@ const title: KeyStr = {
 const jobs: Array<jobInterface> = [
   {
     period: {
+      es: "6/2023 - Actualidad",
+      en: "6/2023 - Present",
+    },
+    title: {
+      es: "Codika",
+      en: "Codika",
+    },
+    position: {
+      es: "Desarrollador Full Stack",
+      en: "Full Stack Developer",
+    },
+    summary: {
+      es: "Crear diferentes proyectos para grandes empresas como: Centro Cuesta Nacional , Banco Popular Dominicano, Bondelic, SkyHigh, Metaldom, Analisa, Seprisa, entre otras.",
+      en: "Create different projects for large companies such as: Centro Cuesta Nacional, Banco Popular Dominicano, Bondelic, SkyHigh, Metaldom, Analisa, Seprisa, among others.",
+    },
+  },
+  {
+    period: {
       es: "11/2023 - Actualidad",
       en: "11/2023 - Present",
     },
@@ -35,24 +53,6 @@ const jobs: Array<jobInterface> = [
     summary: {
       es: "Desarrollar un BackOffice y Backend para Kalifka, junto con la implementación de la lógica de negocio de la aplicación.",
       en: "Develop a BackOffice and Backend for Kalifka, as well as assist in creating the business logic for the application.",
-    },
-  },
-  {
-    period: {
-      es: "6/2023 - Actualidad",
-      en: "6/2023 - Present",
-    },
-    title: {
-      es: "Codika",
-      en: "Codika",
-    },
-    position: {
-      es: "Desarrollador Full Stack",
-      en: "Full Stack Developer",
-    },
-    summary: {
-      es: "Realicé el Backend, FrontEnd, Base de datos y logica de negocio de diferentes proyectos utilizando diferentes lenguajes y tecnologias.",
-      en: "I create Backend, FrontEnd, Database and business logic for different projects using different languages and technologies.",
     },
   },
   {
