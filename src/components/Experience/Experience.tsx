@@ -29,8 +29,8 @@ const jobs: Array<jobInterface> = [
       en: "Codika",
     },
     position: {
-      es: "Desarrollador Full Stack",
-      en: "Full Stack Developer",
+      es: "Ingeniero de software",
+      en: "Software Engineer",
     },
     summary: {
       es: "Crear diferentes proyectos para grandes empresas como: Centro Cuesta Nacional , Banco Popular Dominicano, Bondelic, SkyHigh, Metaldom, Analisa, Seprisa, entre otras.",
@@ -47,8 +47,8 @@ const jobs: Array<jobInterface> = [
       en: "Kalifika",
     },
     position: {
-      es: "Desarrollador Full Stack",
-      en: "Full Stack Developer",
+      es: "Ingeniero de software",
+      en: "Software Engineer",
     },
     summary: {
       es: "Desarrollar un BackOffice y Backend para Kalifka, junto con la implementación de la lógica de negocio de la aplicación.",
@@ -65,8 +65,8 @@ const jobs: Array<jobInterface> = [
       en: "Tennos Business",
     },
     position: {
-      es: "Desarrollador Full Stack",
-      en: "Full Stack Developer",
+      es: "Ingeniero de software",
+      en: "Software Engineer",
     },
     summary: {
       es: "Trabajé dando soporte y creando nuevos módulos para el crm MagyNet y la aplicación MagyPago",

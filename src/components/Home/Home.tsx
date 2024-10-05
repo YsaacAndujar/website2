@@ -23,12 +23,12 @@ const Home = () => {
   };
   const summary: { [key: string]: Array<string> } = {
     es: [
-      "Soy un programador y desarrollador FullStack con experiencia en FrontEnd y BackEnd.",
+      "Soy un ingeniero de software y desarrollador Full Stack con experiencia en FrontEnd y BackEnd.",
       "Domino los lenguajes JavaScript, C#, Python, entre otros; Algunos frameworks como Vue, React, Angular y Django. También manejo Base de datos como SqlServer, MySql y PostgreSQL.",
       "De igual manera, siempre estoy dispuesto a aprender nuevos lenguajes y tecnologías. Trabajo con responsabilidad, creatividad, y dedicación.",
     ],
     en: [
-      "I am a FullStack developer with experience in FrontEnd and BackEnd.",
+      "I am a software engineer and a Full Stack developer with experience in FrontEnd and BackEnd.",
       "I know several languages such as JavaScript, C# and Python; Some frameworks like Vue, React, Angular and Django. I also manage Databases such as SqlServer, MySql and PostgreSQL.",
       "In the same way, I am always willing to learn new languages and technologies. I work with responsibility, creativity, and dedication.",
     ],
@@ -37,18 +37,16 @@ const Home = () => {
   useEffect(() => {
     const x: { [key: string]: Array<string> } = {
       es: [
+        "Ingeniero de Software",
         "Desarrollador de software",
         "Programador",
-        "Tecnólogo en software",
         "Desarrollador FullStack",
-        "Estudiante Ing. Software",
       ],
       en: [
+        "Software Engineer",
         "Software Developer",
         "Programmer",
-        "Software Technician",
         "Full Stack Developer",
-        "Software Engineer",
       ],
     };
     setTypedWord(x[Language]);
