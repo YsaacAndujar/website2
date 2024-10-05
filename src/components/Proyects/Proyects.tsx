@@ -43,7 +43,7 @@ const proyects: Array<proyectInterface> = [
     },
     summary: {
       es: [
-        'Plataforma Kalifika"',
+        'Plataforma Kalifika',
         "BackOffice para un buró de crédito digital que simplifica el análisis de datos crediticios de clientes. Ofrece gestión de usuarios, herramientas de análisis de crédito, generación de informes personalizados, herramientas de comunicación y auditoría de actividades.",
       ],
       en: [
