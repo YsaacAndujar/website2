@@ -1,68 +1,28 @@
 .card{
 	background-color: rgb(29, 29, 29);
     width: 420px;
-    height: 390px;
+    height: 450px;
     padding: 0 20px 0px;
     position: relative;
     border-radius: 2%;
 }
-@media (max-width: 500px) {
-    .card{
-        height: 400px;
-    }
-}
-@media (max-width: 460px) {
-    .card{
-        height: 420px;
-    }
-}
+
+
 @media (max-width: 450px) {
     .card{
-        height: 430px;
-    }
-}
-@media (max-width: 420px) {
-    .card{
-        height: 440px;
+        height: 490px;
     }
 
 }
-@media (max-width: 400px) {
-    .card{
-        height: 465px;
-    }
 
-}
-@media (max-width: 395px) {
-    .card{
-        height: 475px;
-    }
 
-}
-@media (max-width: 390px) {
-    .card{
-        height: 485px;
-    }
-
-}
-@media (max-width: 380px) {
-    .card{
-        height: 500px;
-    }
-
-}
-@media (max-width: 360px) {
-    .card{
-        height: 530px;
-    }
-
-}
-@media (max-width: 350px) {
+@media (max-width: 710px) {
     .card{
         height: 550px;
     }
 
 }
+
 .container{
     column-gap: 50px;
     row-gap: 50px;

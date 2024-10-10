@@ -9,7 +9,6 @@ import {
   TypeScriptIcon,
   CSharpIcon,
   BlazorIcon,
-  LiveIcon,
   VueIcon,
   JavaScriptIcon,
   EmptyIcon,
@@ -17,6 +16,7 @@ import {
   AspxIcon,
   ReactIcon,
   MongoDbIcon,
+  NodeJsIcon,
 } from "components/CustomIcons/Icons";
 import LanguageContext, { LangageType } from "context/LanguageContext";
 import { ReactNode, useContext } from "react";
@@ -33,9 +33,27 @@ interface proyectInterface {
   title: KeyStr;
   summary: Parragraphs;
   technologies: Array<ReactNode>;
+  liveUrl?: string
   more: Array<ReactNode>;
 }
 const proyects: Array<proyectInterface> = [
+  {
+    title: {
+      es: "SkyHigh Dominicana",
+      en: "SkyHigh Dominicana",
+    },
+    summary: {
+      es: [
+        "WebApp para reservar de vuelos utilizando React en el frontend, Redux para la gestión del estado, NestJS como framework backend y MongoDB para el almacenamiento de datos. La plataforma permite a los usuarios buscar vuelos disponibles, realizar reservas de manera eficiente y completar el proceso de pago.",
+      ],
+      en: [
+        "A web app for flight booking built using React for the frontend, Redux for state management, NestJS as the backend framework, and MongoDB for data storage. The platform allows users to search for available flights, make reservations efficiently, and complete the payment process.",
+      ],
+    },
+    liveUrl: 'https://skyhighdo.com/',
+    technologies: [<ReactIcon />, <NodeJsIcon />, <MongoDbIcon />],
+    more: [<EmptyIcon />],
+  },
   {
     title: {
       es: "Kalifika",
@@ -51,9 +69,27 @@ const proyects: Array<proyectInterface> = [
         "A BackOffice for a digital credit bureau that simplifies the analysis of customer credit data. It offers user management, credit analysis tools, customized report generation, communication tools, and activity auditing.",
       ],
     },
-    technologies: [<PythonIcon />, <DjangoIcon />, <MongoDbIcon />],
+    technologies: [<AngularIcon/>, <PythonIcon />, <DjangoIcon />, <PostgreSQLIcon />],
     more: [<EmptyIcon />],
   },
+  {
+    title: {
+      es: "Pokemon GTS",
+      en: "Pokemon GTS",
+    },
+    summary: {
+      es: [
+        "En esta plataforma, los usuarios pueden registrarse, crear su propia cuenta y empezar a coleccionar Pokémon. La aplicación permite agregar Pokémon a la colección personal y realizar intercambios con otros usuarios registrados. Este proyecto pone en práctica autenticación de usuarios, manejo de bases de datos y actualización en tiempo real.",
+      ],
+      en: [
+        "On this platform, users can sign up, create their own account, and start collecting Pokémon. The app allows users to add Pokémon to their personal collection and trade them with other registered users. This project implements user authentication, database management, and real-time updates.",
+      ],
+    },
+    liveUrl: 'https://pokemongts.netlify.app',
+    technologies: [<ReactIcon />, <NodeJsIcon />, <MongoDbIcon />],
+    more: [<GitHubIcon link="https://github.com/YsaacAndujar/pokemon-gts-fe"/>],
+  },
+ 
   {
     title: {
       es: "Journal App",
@@ -61,18 +97,16 @@ const proyects: Array<proyectInterface> = [
     },
     summary: {
       es: [
-        'Inspirado en "Quien es este pokemon?", esta app te da una imagen de un pokemon y debes elegir su nombre correcto entre 4 opciones distintas.',
-        "Además tiene una pokédex para investigar los pokemon desconocidos.",
+        'He desarrollado una aplicación web donde los usuarios pueden agregar notas sobre lo que han hecho, con la funcionalidad adicional de editar y eliminar esas notas según sea necesario. La plataforma ofrece una interfaz sencilla y fácil de usar, lo que permite a los usuarios gestionar sus notas de manera rápida y eficiente.',
       ],
       en: [
-        'Inspired by "Who is this pokemon?", this app gives you an image of a pokemon and you must choose its correct name among 4 different options.',
-        "Additionally it has a pokédex to search unknown pokemon.",
+        "I have developed a web application where users can add notes about what they have done, with the additional functionality to edit and delete those notes as needed. The platform offers a simple and user-friendly interface, allowing users to manage their notes quickly and efficiently.",
       ],
     },
-    technologies: [<VueIcon />, <JavaScriptIcon />],
+    liveUrl:'https://mynotesjournal.netlify.app/',
+    technologies: [<ReactIcon />, <TypeScriptIcon />],
     more: [
       <GitHubIcon link="https://github.com/YsaacAndujar/journal-app" />,
-      <LiveIcon link="https://mynotesjournal.netlify.app/" />,
     ],
   },
   {
@@ -90,11 +124,55 @@ const proyects: Array<proyectInterface> = [
         "Additionally it has a pokédex to search unknown pokemon.",
       ],
     },
+    liveUrl:'https://ypokemon.netlify.app',
     technologies: [<VueIcon />, <JavaScriptIcon />],
     more: [
       <GitHubIcon link="https://github.com/YsaacAndujar/pokemon-vue2" />,
       <YouTubeIcon link="https://youtu.be/N8JpC0WZgJE" />,
-      <LiveIcon link="https://ypokemon.netlify.app/" />,
+    ],
+  },
+  {
+    title: {
+      es: "Trailers (BackEnd - API)",
+      en: "Trailers (BackEnd - API)",
+    },
+    summary: {
+      es: [
+        "Esta aplicación es un BackOffice para una aplicación web para ver trailers de peliculas.",
+        "Podrás crear nuevas categorías y películas. Tiene varias API que permiten obtener los datos de la base de datos para poder visualizarlas en la aplicación final que tendrá el usuario.",
+      ],
+      en: [
+        "This application is a BackOffice for a web application to watch movie trailers.",
+        "You can create new categories and movies. It has several APIs that allow obtaining the data from the database to be able to visualize them in the final application that the user will have.",
+      ],
+    },
+    technologies: [<PythonIcon />, <DjangoIcon />],    
+    liveUrl:'https://trailers-django-latest.onrender.com',
+    more: [
+      <GitHubIcon link="https://github.com/YsaacAndujar/Trailers_API_Django_Rest_Framework" />,
+      <YouTubeIcon link="https://www.youtube.com/embed/QSVky1ARCss" />,
+    ],
+  },
+  {
+    title: {
+      es: "Trailers (FrontEnd)",
+      en: "Trailers (FrontEnd)",
+    },
+    summary: {
+      es: [
+        "FrontEnd de mi BackEnd de Trailers. Consta de un sistema de login de usuarios, una parte para explorar películas y home.",
+        "Asimismo, puedes ver los detalles de una película y ver su tráiler en la misma página.",
+      ],
+      en: [
+        "FrontEnd of my Trailers BackEnd. It consists of a user login system, a part to explore movies and home.",
+        "You can view the details of a movie and watch its trailer on the same page.",
+      ],
+    },
+    liveUrl:'https://trailers-angular.netlify.app',
+    technologies: [<AngularIcon />, <TypeScriptIcon />],
+    more: [
+      <GitHubIcon link="https://github.com/YsaacAndujar/Trailers_Angular" />,
+      <YouTubeIcon link="https://www.youtube.com/embed/A618vRaX_w4" />,
     ],
   },
   {
@@ -156,48 +234,7 @@ const proyects: Array<proyectInterface> = [
     technologies: [<AspxIcon />, <CSharpIcon />, <SqlServerIcon />],
     more: [<EmptyIcon />],
   },
-  {
-    title: {
-      es: "Trailers (BackEnd - API)",
-      en: "Trailers (BackEnd - API)",
-    },
-    summary: {
-      es: [
-        "Esta aplicación es un BackOffice para una aplicación web para ver trailers de peliculas.",
-        "Podrás crear nuevas categorías y películas. Tiene varias API que permiten obtener los datos de la base de datos para poder visualizarlas en la aplicación final que tendrá el usuario.",
-      ],
-      en: [
-        "This application is a BackOffice for a web application to watch movie trailers.",
-        "You can create new categories and movies. It has several APIs that allow obtaining the data from the database to be able to visualize them in the final application that the user will have.",
-      ],
-    },
-    technologies: [<PythonIcon />, <DjangoIcon />],
-    more: [
-      <GitHubIcon link="https://github.com/YsaacAndujar/Trailers_API_Django_Rest_Framework" />,
-      <YouTubeIcon link="https://www.youtube.com/embed/QSVky1ARCss" />,
-    ],
-  },
-  {
-    title: {
-      es: "Trailers (FrontEnd)",
-      en: "Trailers (FrontEnd)",
-    },
-    summary: {
-      es: [
-        "FrontEnd de mi BackEnd de Trailers. Consta de un sistema de login de usuarios, una parte para explorar películas y home.",
-        "Asimismo, puedes ver los detalles de una película y ver su tráiler en la misma página.",
-      ],
-      en: [
-        "FrontEnd of my Trailers BackEnd. It consists of a user login system, a part to explore movies and home.",
-        "You can view the details of a movie and watch its trailer on the same page.",
-      ],
-    },
-    technologies: [<AngularIcon />, <TypeScriptIcon />],
-    more: [
-      <GitHubIcon link="https://github.com/YsaacAndujar/Trailers_Angular" />,
-      <YouTubeIcon link="https://www.youtube.com/embed/A618vRaX_w4" />,
-    ],
-  },
+  
   {
     title: {
       es: "Super Market Web",
@@ -251,7 +288,7 @@ const Proyects = () => {
       <h1 className="title">{title[Language]}</h1>
       <hr className="separator" />
       <div className="container default-padding">
-        {proyects.map(({ title, technologies, summary, more }, index) => {
+        {proyects.map(({ title, technologies, summary, more, liveUrl }, index) => {
           return (
             <motion.div
               key={index}
@@ -265,6 +302,11 @@ const Proyects = () => {
               {summary[Language].map((text, subindex) => {
                 return <p className="text" key={`${index}${subindex}`}>{text}</p>;
               })}
+              {
+                !!liveUrl && (<>
+                  <a href={liveUrl} style={{color: "#397ff7"}}>{liveUrl}</a>
+                </>)
+              }
               <div className="icons-container">
                 <div className="icon-group right">{technologies}</div>
                 <hr className="c-separator" />
