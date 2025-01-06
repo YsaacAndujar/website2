@@ -132,11 +132,11 @@ const Experience = () => {
               return (
                 <div className="timeline-item" key={index}>
                   <div className="timeline-dot"></div>
-                  <motion.div
+                  {/* <motion.div
                     className="timeline-date"
                     initial={initial}
                     whileInView={inView}
-                  >{job.period[Language]}</motion.div>
+                  >{job.period[Language]}</motion.div> */}
                   <motion.div
                     className="timeline-content"
                     initial={initial}
