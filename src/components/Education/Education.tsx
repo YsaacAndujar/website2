@@ -83,13 +83,13 @@ const Education = () => {
               return (
                 <div className="timeline-item" key={index}>
                   <div className="timeline-dot"></div>
-                  <motion.div
+                  {/* <motion.div
                     className="timeline-date"
                     initial={initial}
                     whileInView={inView}
                   >
                     {degree.period[Language]}
-                  </motion.div>
+                  </motion.div> */}
                   <motion.div
                     className="timeline-content"
                     initial={initial}
