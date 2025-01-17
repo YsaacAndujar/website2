@@ -105,8 +105,8 @@ const jobs: Array<jobInterface> = [
       en: "Full Stack Developer",
     },
     summary: {
-      es: "Trabajé como técnico en computación e informática dando soporte al cliente, reparando computadoras y vendiendolas.",
-      en: "I worked as a computer and IT technician giving customer support, repairing computers and selling them.",
+      es: "Desarrollo de sitios web para clientes utilizando tecnologías modernas como JavaScript, TypeScript, React, Angular, Python, .NET Core, C#, Vue, SQL Server, MySQL, MongoDB y PostgreSQL.",
+      en: "Development of websites for clients using modern technologies such as JavaScript, TypeScript, React, Angular, Python, .NET Core, C#, Vue, SQL Server, MySQL, MongoDB, and PostgreSQL.",
     },
   },
 ];
