@@ -33,8 +33,8 @@ const jobs: Array<jobInterface> = [
       en: "Software Engineer",
     },
     summary: {
-      es: "Crear diferentes proyectos para grandes empresas como: Centro Cuesta Nacional , Banco Popular Dominicano, Bondelic, SkyHigh, Metaldom, Analisa, Seprisa, entre otras.",
-      en: "Create different projects for large companies such as: Centro Cuesta Nacional, Banco Popular Dominicano, Bondelic, SkyHigh, Metaldom, Analisa, Seprisa, among others.",
+      es: "Desarrollé proyectos a gran escala para clientes destacados como Centro Cuesta Nacional, Banco Popular Dominicano, Bondelic, SkyHigh, Metaldom, Analisa y Seprisa. Utilicé tecnologías como React, NestJS, .NET Core, Angular y Django para crear soluciones web eficientes, escalables y personalizadas.",
+      en: "I developed large-scale projects for prominent clients such as Centro Cuesta Nacional, Banco Popular Dominicano, Bondelic, SkyHigh, Metaldom, Analisa, and Seprisa. I used technologies like React, NestJS, .NET Core, Angular, and Django to create efficient, scalable, and customized web solutions.",
     },
   },
   {
@@ -51,8 +51,8 @@ const jobs: Array<jobInterface> = [
       en: "Software Engineer",
     },
     summary: {
-      es: "Desarrollar un BackOffice y Backend para Kalifka, junto con la implementación de la lógica de negocio de la aplicación.",
-      en: "Develop a BackOffice and Backend for Kalifka, as well as assist in creating the business logic for the application.",
+      es: "Desarrollé el BackOffice de un buró de crédito para grandes bancos dominicanos con Angular en el frontend y Django en el backend.",
+      en: "I developed the BackOffice for a credit bureau serving major Dominican banks, using Angular for the frontend and Django for the backend.",
     },
   },
   {
@@ -69,8 +69,8 @@ const jobs: Array<jobInterface> = [
       en: "Software Engineer",
     },
     summary: {
-      es: "Trabajé dando soporte y creando nuevos módulos para el crm MagyNet y la aplicación MagyPago",
-      en: "I worked giving support and creating new modules for the MagyNet crm and the MagyPago application",
+      es: "Trabajé como FullStack en proyectos con Vue.js y .NET Core, y en ASPX, desarrollando y manteniendo módulos.",
+      en: "I worked as a FullStack developer on projects using Vue.js and .NET Core, as well as ASPX, developing and maintaining modules.",
     },
   },
   {
@@ -87,8 +87,8 @@ const jobs: Array<jobInterface> = [
       en: "Full Stack Developer",
     },
     summary: {
-      es: "Realicé un BackOffice y API's para una aplicación móvil sobre recargas telefónicas, transferencia de dinero y compra y venta de tickets de lotería.",
-      en: "I made a BackOffice and API's for a mobile application about telephone recharges, money transfers and buying and selling lottery tickets",
+      es: "Desarrollé un BackOffice para una aplicación móvil de recargas telefónicas y compra de tickets de lotería y creé las APIs necesarias para conectar el BackOffice con la aplicación móvil.",
+      en: "I developed a BackOffice for a mobile app focused on phone top-ups and lottery ticket purchasesa and created the APIs required to connect the BackOffice with the mobile application.",
     },
   },
   {
@@ -97,12 +97,12 @@ const jobs: Array<jobInterface> = [
       en: "06/2019 - 08/2019",
     },
     title: {
-      es: "Gadget Gallery",
-      en: "Gadget Gallery",
+      es: "Freelance",
+      en: "Freelance",
     },
     position: {
-      es: "Técnico en Computación",
-      en: "Computer Technician",
+      es: "Desarrollador FullStack",
+      en: "Full Stack Developer",
     },
     summary: {
       es: "Trabajé como técnico en computación e informática dando soporte al cliente, reparando computadoras y vendiendolas.",

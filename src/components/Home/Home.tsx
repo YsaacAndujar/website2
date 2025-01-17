@@ -23,14 +23,11 @@ const Home = () => {
   };
   const summary: { [key: string]: Array<string> } = {
     es: [
-      "Soy un ingeniero de software y desarrollador Full Stack con experiencia en FrontEnd y BackEnd.",
-      "Domino los lenguajes JavaScript, C#, Python, entre otros; Algunos frameworks como Vue, React, Angular y Django. También manejo Base de datos como SqlServer, MySql y PostgreSQL.",
-      "De igual manera, siempre estoy dispuesto a aprender nuevos lenguajes y tecnologías. Trabajo con responsabilidad, creatividad, y dedicación.",
+      "Soy un ingeniero de software FullStack con más de 4 años de experiencia profesional, incluyendo el desarrollo de proyectos para grandes empresas.","He desarrollado sólidas habilidades en múltiples lenguajes de programación así como en el manejo de bases de datos relacionales y no relacionales."
     ],
     en: [
-      "I am a software engineer and a Full Stack developer with experience in FrontEnd and BackEnd.",
-      "I know several languages such as JavaScript, C# and Python; Some frameworks like Vue, React, Angular and Django. I also manage Databases such as SqlServer, MySql and PostgreSQL.",
-      "In the same way, I am always willing to learn new languages and technologies. I work with responsibility, creativity, and dedication.",
+      "I am a FullStack software engineer with over 4 years of professional experience, including developing projects for large companies.",
+      "I have developed strong skills in multiple programming languages as well as in managing relational and non-relational databases."
     ],
   };
   const [typedWord, setTypedWord] = useState<Array<string>>([""]);
