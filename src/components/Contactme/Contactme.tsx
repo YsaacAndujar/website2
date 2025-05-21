@@ -110,7 +110,7 @@ const Contactme = () => {
         <motion.div initial={initital} whileInView={inView}>
           <LinkedinIcon
             size="icon-bg"
-            link="https://www.linkedin.com/in/ysaac-andujar-binet-982517232/"
+            link="https://www.linkedin.com/in/ysaac"
           />
         </motion.div>
         <motion.div initial={initital} whileInView={inView}>
