@@ -19,24 +19,7 @@ const title: KeyStr = {
 };
 
 const jobs: Array<jobInterface> = [
-  {
-    period: {
-      es: "6/2023 - Actualidad",
-      en: "6/2023 - Present",
-    },
-    title: {
-      es: "Codika",
-      en: "Codika",
-    },
-    position: {
-      es: "Ingeniero de software",
-      en: "Software Engineer",
-    },
-    summary: {
-      es: "Desarrollé proyectos a gran escala para clientes destacados como Centro Cuesta Nacional, Banco Popular Dominicano, Bondelic, SkyHigh, Metaldom, Analisa y Seprisa. Utilicé tecnologías como React, NestJS, .NET Core, Angular y Django para crear soluciones web eficientes, escalables y personalizadas.",
-      en: "I developed large-scale projects for prominent clients such as Centro Cuesta Nacional, Banco Popular Dominicano, Bondelic, SkyHigh, Metaldom, Analisa, and Seprisa. I used technologies like React, NestJS, .NET Core, Angular, and Django to create efficient, scalable, and customized web solutions.",
-    },
-  },
+  
   {
     period: {
       es: "11/2023 - Actualidad",
@@ -53,6 +36,24 @@ const jobs: Array<jobInterface> = [
     summary: {
       es: "Desarrollé el BackOffice de un buró de crédito para grandes bancos dominicanos con Angular en el frontend y Django en el backend.",
       en: "I developed the BackOffice for a credit bureau serving major Dominican banks, using Angular for the frontend and Django for the backend.",
+    },
+  },
+  {
+    period: {
+      es: "6/2023 - Actualidad",
+      en: "6/2023 - 08/2025",
+    },
+    title: {
+      es: "Codika",
+      en: "Codika",
+    },
+    position: {
+      es: "Ingeniero de software",
+      en: "Software Engineer",
+    },
+    summary: {
+      es: "Desarrollé proyectos a gran escala para clientes destacados como Centro Cuesta Nacional, Banco Popular Dominicano, Bondelic, SkyHigh, Metaldom, Analisa y Seprisa. Utilicé tecnologías como React, NestJS, .NET Core, Angular y Django para crear soluciones web eficientes, escalables y personalizadas.",
+      en: "I developed large-scale projects for prominent clients such as Centro Cuesta Nacional, Banco Popular Dominicano, Bondelic, SkyHigh, Metaldom, Analisa, and Seprisa. I used technologies like React, NestJS, .NET Core, Angular, and Django to create efficient, scalable, and customized web solutions.",
     },
   },
   {
@@ -93,8 +94,8 @@ const jobs: Array<jobInterface> = [
   },
   {
     period: {
-      es: "06/2019 - 08/2019",
-      en: "06/2019 - 08/2019",
+      es: "04/2019 - 01/2022",
+      en: "04/2019 - 01/2022",
     },
     title: {
       es: "Freelance",
