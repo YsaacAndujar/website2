@@ -25,6 +25,24 @@ const jobs: Array<jobInterface> = [
       en: "6/2023 - Present",
     },
     title: {
+      es: "Edays",
+      en: "Edays",
+    },
+    position: {
+      es: "Ingeniero de software",
+      en: "Software Engineer",
+    },
+    summary: {
+      es: "Trabajo como Ingeniero de Software en e-days, una plataforma global de gestión de personal utilizada por empresas en más de 120 países. Me encargo del mantenimiento, mejora y desarrollo de nuevas funcionalidades dentro de la plataforma, trabajando con Vue.js en el frontend y .NET en el backend. Contribuyo a soluciones relacionadas con la gestión de ausencias, control de tiempo, documentación de recursos humanos e integraciones de sistemas, ayudando a mejorar la escalabilidad, el rendimiento y la experiencia de usuario.",
+      en: "I work as a Software Engineer at e-days, a global workforce management platform used by companies in over 120 countries. I am responsible for maintaining, improving, and developing new features across the platform, working with Vue.js on the frontend and .NET on the backend. I contribute to solutions related to absence management, time tracking, HR documentation, and system integrations, helping improve scalability, performance, and user experience.",
+    },
+  },
+  {
+    period: {
+      es: "6/2023 - Actualidad",
+      en: "6/2023 - Present",
+    },
+    title: {
       es: "Codika",
       en: "Codika",
     },
