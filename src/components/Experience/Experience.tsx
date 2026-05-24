@@ -37,42 +37,24 @@ const jobs: Array<jobInterface> = [
       en: "I work as a Software Engineer at e-days, a global workforce management platform used by companies in over 120 countries. I am responsible for maintaining, improving, and developing new features across the platform, working with Vue.js on the frontend and .NET on the backend. I contribute to solutions related to absence management, time tracking, HR documentation, and system integrations, helping improve scalability, performance, and user experience.",
     },
   },
-  {
-    period: {
-      es: "6/2023 - Actualidad",
-      en: "6/2023 - Present",
-    },
-    title: {
-      es: "Codika",
-      en: "Codika",
-    },
-    position: {
-      es: "Ingeniero de software",
-      en: "Software Engineer",
-    },
-    summary: {
-      es: "Desarrollé proyectos a gran escala para clientes destacados como Centro Cuesta Nacional, Banco Popular Dominicano, Bondelic, SkyHigh, Metaldom, Analisa y Seprisa. Utilicé tecnologías como React, NestJS, .NET Core, Angular y Django para crear soluciones web eficientes, escalables y personalizadas.",
-      en: "I developed large-scale projects for prominent clients such as Centro Cuesta Nacional, Banco Popular Dominicano, Bondelic, SkyHigh, Metaldom, Analisa, and Seprisa. I used technologies like React, NestJS, .NET Core, Angular, and Django to create efficient, scalable, and customized web solutions.",
-    },
-  },
-  {
-    period: {
-      es: "11/2023 - Actualidad",
-      en: "11/2023 - Present",
-    },
-    title: {
-      es: "Kalifika",
-      en: "Kalifika",
-    },
-    position: {
-      es: "Ingeniero de software",
-      en: "Software Engineer",
-    },
-    summary: {
-      es: "Desarrollé el BackOffice de un buró de crédito para grandes bancos dominicanos con Angular en el frontend y Django en el backend.",
-      en: "I developed the BackOffice for a credit bureau serving major Dominican banks, using Angular for the frontend and Django for the backend.",
-    },
-  },
+  // {
+  //   period: {
+  //     es: "11/2023 - Actualidad",
+  //     en: "11/2023 - Present",
+  //   },
+  //   title: {
+  //     es: "Kalifika",
+  //     en: "Kalifika",
+  //   },
+  //   position: {
+  //     es: "Ingeniero de software",
+  //     en: "Software Engineer",
+  //   },
+  //   summary: {
+  //     es: "Desarrollé el BackOffice de un buró de crédito para grandes bancos dominicanos con Angular en el frontend y Django en el backend.",
+  //     en: "I developed the BackOffice for a credit bureau serving major Dominican banks, using Angular for the frontend and Django for the backend.",
+  //   },
+  // },
   {
     period: {
       es: "6/2023 - Actualidad",
